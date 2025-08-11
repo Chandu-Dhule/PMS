@@ -130,8 +130,7 @@
               "RelativeToolTip": "PMSCH.Server\\Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T10:32:18.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:32:18.661Z"
             },
             {
               "$type": "Document",
@@ -143,8 +142,7 @@
               "RelativeToolTip": "PMSCH.Server\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T04:59:56.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T04:59:56.224Z"
             },
             {
               "$type": "Document",
@@ -156,8 +154,7 @@
               "RelativeToolTip": "PMSCH.Server\\Healper\\PasswordHelper.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAcwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T08:02:20.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T08:02:20.234Z"
             },
             {
               "$type": "Document",
@@ -169,8 +166,7 @@
               "RelativeToolTip": "PMSCH.Server\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T05:03:35.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T05:03:35.803Z"
             },
             {
               "$type": "Document",
@@ -182,8 +178,7 @@
               "RelativeToolTip": "PMSCH.Server\\Models\\IUserRepository.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T05:10:04.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T05:10:04.766Z"
             },
             {
               "$type": "Document",
@@ -193,7 +188,7 @@
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "PMSCH.Server\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAzwIgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAswIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-11T05:07:25.818Z",
               "EditorCaption": ""
