@@ -126,6 +126,15 @@ public class UserRepository : IUserRepository
 
         command.ExecuteNonQuery();
     }
+    public void CleanupExpiredTokens()
+    {
+        using var connection = new SqlConnection(_connectionString);
+        connection.Open();
+
+        var command = new SqlCommand("DELETE FROM UserTokens WHERE Expiry < GETDATE()", connection);
+        command.ExecuteNonQuery();
+    }
+
 
 
     private User MapUser(SqlDataReader reader)

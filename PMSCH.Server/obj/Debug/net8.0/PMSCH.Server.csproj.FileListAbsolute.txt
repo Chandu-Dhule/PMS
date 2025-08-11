@@ -83,3 +83,4 @@ C:\Users\2421026\source\repos\PMSCH\PMSCH.Server\obj\Debug\net8.0\refint\PMSCH.S
 C:\Users\2421026\source\repos\PMSCH\PMSCH.Server\obj\Debug\net8.0\PMSCH.Server.pdb
 C:\Users\2421026\source\repos\PMSCH\PMSCH.Server\obj\Debug\net8.0\PMSCH.Server.genruntimeconfig.cache
 C:\Users\2421026\source\repos\PMSCH\PMSCH.Server\obj\Debug\net8.0\ref\PMSCH.Server.dll
+C:\Users\2421026\source\repos\PMSCH\PMSCH.Server\obj\Debug\net8.0\PMSCH.Server.sourcelink.json
