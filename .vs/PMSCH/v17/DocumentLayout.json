@@ -160,7 +160,7 @@
               "RelativeDocumentMoniker": "PMSCH.Server\\Program.cs",
               "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Program.cs",
               "RelativeToolTip": "PMSCH.Server\\Program.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAuwFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T10:32:18.661Z",
               "EditorCaption": ""
@@ -175,8 +175,7 @@
               "RelativeToolTip": "PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T04:03:52.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T04:03:52.384Z"
             },
             {
               "$type": "Document",
@@ -188,8 +187,7 @@
               "RelativeToolTip": "PMSCH.Server\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAAuwK0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T05:07:25.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T05:07:25.818Z"
             },
             {
               "$type": "Document",
@@ -213,8 +211,7 @@
               "RelativeToolTip": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAqwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T04:05:06.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T04:05:06.324Z"
             },
             {
               "$type": "Document",
