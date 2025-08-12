@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\2421026\\source\\repos\\PMSCH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\technicianmachineassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\technicianmachineassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\healper\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\healper\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\technicianmachineassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\technicianmachineassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\controllers\\healthmetricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\healthmetricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\healper\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\healper\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\maintenancelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\controllers\\healthmetricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\healthmetricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\controllers\\machinetypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\machinetypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C6297D3-2535-4281-9A31-1BECA0C76DD8}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\models\\maintenancelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,19 +126,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TechnicianMachineAssignmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
-              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
-              "RelativeToolTip": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAUwKsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T04:05:06.324Z",
+              "WhenOpened": "2025-08-11T05:07:25.818Z",
               "EditorCaption": ""
             },
             {
@@ -156,15 +156,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "HealthMetric.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\HealthMetric.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\HealthMetric.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\HealthMetric.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\HealthMetric.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:47:29.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\IUserRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:10:04.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\User.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA5wA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:03:35.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MachinesController.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\MachinesController.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachinesController.cs",
               "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\MachinesController.cs",
               "RelativeToolTip": "PMSCH.Server\\Controllers\\MachinesController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAA9wFIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T06:51:45.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HealthMetricsController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:44:41.378Z",
               "EditorCaption": ""
             },
             {
@@ -175,13 +227,26 @@
               "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\AccountController.cs",
               "RelativeToolTip": "PMSCH.Server\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T04:59:56.224Z"
+              "WhenOpened": "2025-08-11T04:59:56.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "TechnicianMachineAssignmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T04:05:06.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PasswordHelper.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Healper\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Healper\\PasswordHelper.cs",
@@ -193,33 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\User.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\User.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T05:03:35.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "PMSCH.Server\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAswH8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T05:07:25.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Program.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Program.cs",
@@ -231,20 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\IUserRepository.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\IUserRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T05:10:04.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\LoginRequest.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Models\\LoginRequest.cs",
@@ -256,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PMSCH.Server\\Properties\\launchSettings.json",
@@ -268,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "MaintenanceLogRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
@@ -280,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\appsettings.json",
               "RelativeDocumentMoniker": "PMSCH.Server\\appsettings.json",
@@ -292,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\appsettings.Development.json",
               "RelativeDocumentMoniker": "PMSCH.Server\\appsettings.Development.json",
@@ -304,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "MaintenanceLogsController.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
@@ -316,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MachineTypeRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
@@ -328,19 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HealthMetricsController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T06:44:41.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "MachineTypesController.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\MachineTypesController.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachineTypesController.cs",
@@ -352,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MachineCategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
@@ -364,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MachineRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineRepository.cs",
@@ -376,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "MachineCategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
@@ -388,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "HealthMetricRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
@@ -397,18 +411,6 @@
               "ViewState": "AgIAAEcAAAAAAAAAAAAgwEUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T06:47:41.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "HealthMetric.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\HealthMetric.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\HealthMetric.cs",
-              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Models\\HealthMetric.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\HealthMetric.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T06:47:29.078Z"
             },
             {
               "$type": "Document",

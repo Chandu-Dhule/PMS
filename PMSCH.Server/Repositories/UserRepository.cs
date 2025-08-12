@@ -1,17 +1,20 @@
-﻿
-using PMSCH.Server.Models;
+﻿using PMSCH.Server.Models;
 using PMSCH.Server.Repositories;
-
 using Microsoft.Data.SqlClient;
-
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public class UserRepository : IUserRepository
 {
     private readonly string _connectionString;
+    private readonly TechnicianMachineAssignmentRepository _assignmentRepository;
 
-    public UserRepository(IConfiguration configuration)
+    public UserRepository(IConfiguration configuration, TechnicianMachineAssignmentRepository assignmentRepository)
     {
         _connectionString = configuration.GetConnectionString("DefaultConnection");
+        _assignmentRepository = assignmentRepository;
     }
 
     public User GetUserByUsername(string username)
@@ -36,14 +39,26 @@ public class UserRepository : IUserRepository
         using var connection = new SqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("INSERT INTO Users (Username, PasswordHash, Role, Category, AssignedMachineIds) VALUES (@Username, @PasswordHash, @Role, @Category, @AssignedMachineIds)", connection);
+        var command = new SqlCommand("INSERT INTO Users (Username, PasswordHash, Role, Category) VALUES (@Username, @PasswordHash, @Role, @Category)", connection);
         command.Parameters.AddWithValue("@Username", user.Username);
         command.Parameters.AddWithValue("@PasswordHash", user.PasswordHash);
         command.Parameters.AddWithValue("@Role", user.Role);
         command.Parameters.AddWithValue("@Category", user.Category ?? (object)DBNull.Value);
-        command.Parameters.AddWithValue("@AssignedMachineIds", string.Join(",", user.AssignedMachineIds ?? new List<int>()));
 
         command.ExecuteNonQuery();
+
+        // Assign machines if Technician
+        if (user.Role == "Technician" && user.AssignedMachineIds != null && user.AssignedMachineIds.Any())
+        {
+            var createdUser = GetUserByUsername(user.Username);
+            if (createdUser != null)
+            {
+                foreach (var machineId in user.AssignedMachineIds)
+                {
+                    _assignmentRepository.AssignMachine(createdUser.Id, machineId);
+                }
+            }
+        }
     }
 
     public IEnumerable<User> GetAllUsers()
@@ -101,7 +116,7 @@ public class UserRepository : IUserRepository
         connection.Open();
 
         var command = new SqlCommand(@"
-            SELECT u.Id, u.Username, u.PasswordHash, u.Role, u.Category, u.AssignedMachineIds
+            SELECT u.Id, u.Username, u.PasswordHash, u.Role, u.Category
             FROM Users u
             INNER JOIN UserTokens t ON u.Id = t.UserId
             WHERE t.Token = @Token", connection);
@@ -116,6 +131,7 @@ public class UserRepository : IUserRepository
 
         return null;
     }
+
     public void DeleteToken(string token)
     {
         using var connection = new SqlConnection(_connectionString);
@@ -126,6 +142,7 @@ public class UserRepository : IUserRepository
 
         command.ExecuteNonQuery();
     }
+
     public void CleanupExpiredTokens()
     {
         using var connection = new SqlConnection(_connectionString);
@@ -135,18 +152,22 @@ public class UserRepository : IUserRepository
         command.ExecuteNonQuery();
     }
 
-
-
     private User MapUser(SqlDataReader reader)
     {
-        return new User
+        var user = new User
         {
             Id = (int)reader["Id"],
             Username = reader["Username"].ToString(),
             PasswordHash = reader["PasswordHash"].ToString(),
             Role = reader["Role"].ToString(),
-            Category = reader["Category"]?.ToString(),
-            AssignedMachineIds = reader["AssignedMachineIds"]?.ToString()?.Split(',')?.Select(int.Parse)?.ToList() ?? new List<int>()
+            Category = reader["Category"]?.ToString()
         };
+
+        if (user.Role == "Technician")
+        {
+            user.AssignedMachineIds = _assignmentRepository.GetAssignedMachines(user.Id);
+        }
+
+        return user;
     }
 }
