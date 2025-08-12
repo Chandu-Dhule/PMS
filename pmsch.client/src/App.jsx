@@ -8,6 +8,8 @@ import Dashboard from "./Dashboard";
 import HealthMetrics from "./HealthMetrics";
 import Settings from "./Settings";
 import Home from './Home';
+import ShowAllDetails from './ShowAllDetails'
+import AppInfo from './AppInfo';
 
 function App() {
   // Dummy data for now
@@ -39,6 +41,8 @@ function App() {
           <Route path="/log-maintenance" element={<LogMaintenance />} />
           <Route path="/health-metrics" element={<HealthMetrics />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/show-all-details" element={<ShowAllDetails />} />
+          <Route path="/app-info" element={<AppInfo />} />
         </Routes>
       </main>
     </div>

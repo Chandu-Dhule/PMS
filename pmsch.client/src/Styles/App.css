@@ -1,3 +1,13 @@
+:root {
+  --background: #f0f2f5;
+  --text: #1f2d3d;
+  --accent: #e3f2fd;
+  --dark: #2c3e50;
+  --primary: #4a90e2;
+  --secondary: #2074c7;
+}
+
+/* General Backgrounds */
 .main-bg {
   background-color: var(--background);
   color: var(--text);
@@ -8,7 +18,7 @@
   color: var(--text);
 }
 
-/* App.css */
+/* App Container */
 .app-container {
   background-color: white;
   display: flex;
@@ -16,46 +26,39 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Left sidebar */
+/* Sidebar */
 .sidebar {
   width: 30%;
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
   box-sizing: border-box;
   padding: 0.7rem;
-
 }
 
-/* Right main content */
+/* Main Content */
 .main-content {
-  
-
   width: 100%;
   height: 100%;
   padding: 10px;
   background-color: white;
   box-sizing: border-box;
-  border: 2px solid var(--dark);
+  /* border: 2px solid var(--dark); */
   overflow: hidden auto;
-
 }
 
 .dashboard-content {
   width: 100%;
   height: 100%;
-  padding: 10px;
-  
-background-color: #ffffff;
+  padding: 15px;
+  background-color: #ffffff;
   box-sizing: border-box;
-  border: 2px solid var(--dark);
-  overflow: hidden auto
-
+  /* border: 2px solid var(--dark); */
+  overflow: hidden auto;
 }
 
-
+/* Form Styling */
 .form-container {
   padding: 1rem;
   background-color: #DFEDF8;
-  /* background-color: rgba(251, 236, 236, 0.786); */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
@@ -64,8 +67,7 @@ background-color: #ffffff;
 }
 
 .form-container input,
-.form-container textarea,
-.form-container button {
+.form-container textarea {
   display: block;
   margin: 1rem 0;
   padding: 0.7rem;
@@ -79,14 +81,20 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 99.3%;
+  padding: 0.7rem;
 }
 
 button:hover {
   background-color: var(--secondary);
 }
-/* ------------------------- */
 
+/* Health Metrics Section */
 .main1-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   padding: 1rem;
   background-color: #f8f9fc;
   min-height: 100vh;
@@ -95,9 +103,10 @@ button:hover {
 }
 
 .main1-content h2 {
+  width: 100%;
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -106,16 +115,16 @@ button:hover {
   padding-bottom: 0.5rem;
 }
 
-/* Metric Cards */
+/* Metric Cards - Two Column Layout */
 .metric-card {
+  flex: 0 1 calc(50% - 20px);
   background-color: #ffffff;
   padding: 1rem 1.5rem;
-  margin: 1rem auto;
   border-left: 5px solid #4a90e2;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   border-radius: 8px;
-  max-width: 600px;
   transition: transform 0.2s ease;
+  box-sizing: border-box;
 }
 
 .metric-card:hover {
@@ -133,17 +142,7 @@ button:hover {
   color: #2c3e50;
 }
 
-/* ---------------------- */
-
-
-/* .metric-card {
-  background-color: #fff;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 5px solid var(--primary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-
+/* Responsive Layout */
 @media (max-width: 768px) {
   .app-container {
     flex-direction: column;
@@ -153,8 +152,13 @@ button:hover {
   .main-content {
     width: 100%;
   }
+
+  .metric-card {
+    flex: 1 1 100%;
+  }
 }
 
+/* Stats Section */
 .stats-box div {
   margin: 10px 0;
 }
@@ -168,20 +172,17 @@ button:hover {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   border-bottom: 3px solid #3498db;
-
 }
 
 .stats-box a {
-  
-display: block;
+  display: block;
   padding: 12px;
   background-color: #7ebcf9;
   color: white;
   text-align: center;
   border-radius: 10px;
   text-decoration: none;
-  font-weight: bold
-
+  font-weight: bold;
 }
 
 .stats-box a:hover {

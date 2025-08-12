@@ -4,7 +4,7 @@ import './styles/Home.css';
 const Home = ({ totalMachines, maintenanceLogs, goodMachines, badMachines }) => {
   return (
     <div className="home-wrapper">
-      <h1 className="home-heading">Predictive Maintenance Scheduler</h1>
+      <h1 className="home-heading">Machine Minder</h1>
       <div className="dashboard-card">
         <div className="dashboard-item item-machines">
           <h3>Machines</h3>

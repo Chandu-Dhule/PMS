@@ -7,10 +7,6 @@ function HealthMetrics() {
     { machineId: 1, temp: 70, vibration: 0.3, pressure: 2.1, status: "Good" },
     { machineId: 1, temp: 70, vibration: 0.3, pressure: 2.1, status: "Good" },
     { machineId: 1, temp: 70, vibration: 0.3, pressure: 2.1, status: "Good" },
-    { machineId: 1, temp: 70, vibration: 0.3, pressure: 2.1, status: "Good" },
-    { machineId: 1, temp: 70, vibration: 0.3, pressure: 2.1, status: "Good" },
-    { machineId: 1, temp: 70, vibration: 0.3, pressure: 2.1, status: "Good" },
-    { machineId: 1, temp: 70, vibration: 0.3, pressure: 2.1, status: "Good" },
     { machineId: 2, temp: 85, vibration: 0.6, pressure: 3.0, status: "Alert" }
   ];
 
