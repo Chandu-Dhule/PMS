@@ -18,5 +18,7 @@ namespace PMSCH.Server.Helpers
             var hashOfInput = HashPassword(password);
             return hashOfInput == storedHash;
         }
+
+
     }
 }

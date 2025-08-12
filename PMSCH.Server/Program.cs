@@ -1,4 +1,4 @@
-using PMSCH.Server.Repositories;
+﻿using PMSCH.Server.Repositories;
 using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,14 +22,15 @@ builder.Services.AddScoped<TechnicianMachineAssignmentRepository>(provider =>
     return new TechnicianMachineAssignmentRepository(connectionString);
 });
 
-builder.Services.AddScoped<UserRepository>(provider =>
+// ✅ Corrected: Register IUserRepository instead of just UserRepository
+builder.Services.AddScoped<IUserRepository>(provider =>
 {
     var config = provider.GetRequiredService<IConfiguration>();
     var assignmentRepo = provider.GetRequiredService<TechnicianMachineAssignmentRepository>();
     return new UserRepository(config, assignmentRepo);
 });
 
-// Add role-based authorization policies (optional but recommended)
+// Add role-based authorization policies
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
@@ -61,7 +62,7 @@ app.Use(async (context, next) =>
 
     if (!string.IsNullOrEmpty(token))
     {
-        var userRepository = context.RequestServices.GetRequiredService<UserRepository>();
+        var userRepository = context.RequestServices.GetRequiredService<IUserRepository>();
 
         if (userRepository.ValidateToken(token))
         {
