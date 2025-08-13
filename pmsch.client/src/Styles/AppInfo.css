@@ -8,7 +8,7 @@
 .info-wrapper h2 {
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-bottom: 20px;
   text-transform: uppercase;

@@ -1,46 +1,59 @@
-// File: LoginPage.jsx
+// LOGINPAGE.JSX
 import React, { useState } from 'react';
-import './LoginPage.css'; // Optional: for styling
-
+import './styles/LoginPage.css';
+import { Navigate, useNavigate } from 'react-router-dom';
+ 
 const LoginPage = () => {
-  const [role, setRole] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+  const nav = useNavigate();
+ 
+ 
   const handleLogin = (e) => {
-    e.preventDefault();
-    // Replace with actual backend API call
-    console.log(`Role: ${role}, Username: ${username}, Password: ${password}`);
-    alert(`Logging in as ${role}`);
+    // e.preventDefault();
+    // console.log(`Username: ${username}, Password: ${password}`);
+    // alert(`Logging in as ${username}`);
+ 
+    if(username === 'admin' && password === 'admin'){
+      nav('/home');
+    }
+    else{
+      alert('Invalid Credentials');
+    }
+ 
   };
-
+ 
   return (
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
-        <select value={role} onChange={(e) => setRole(e.target.value)} required>
-          <option value="">Select Role</option>
-          <option value="admin">Admin</option>
-          <option value="technician">Technician</option>
-          <option value="manager">Manager</option>
-        </select>
+        <div>
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
+          className="login-input"
         />
+        </div>
+        <div>
         <input
           type="password"
           placeholder="Password"
           value={password}
-                   required
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          className="login-input"
         />
-        <button type="submit">Login</button>
+        </div>
+        <button type="submit" className="login-button" onClick={handleLogin}>Login</button>
       </form>
     </div>
   );
 };
-
+ 
 export default LoginPage;
+ 
+ 
+ 

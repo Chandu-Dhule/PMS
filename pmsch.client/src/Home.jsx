@@ -3,6 +3,7 @@ import './styles/Home.css';
 
 const Home = ({ totalMachines, maintenanceLogs, goodMachines, badMachines }) => {
   return (
+    
     <div className="home-wrapper">
       <h1 className="home-heading">Machine Minder</h1>
       <div className="dashboard-card">

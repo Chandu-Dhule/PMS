@@ -19,16 +19,16 @@ function AppInfo() {
       <div className="info-section">
         <h3>Contact Us</h3>
         <p>Email: support@maintenancescheduler.com</p>
-        <p>Phone: +91 98765 43210</p>
+        <p>Phone: +91 98765 XXXXX</p>
       </div>
 
       <div className="info-section">
         <h3>Development Team</h3>
         <ul>
           <li>Chandrakant Dhule</li>
-          <li>Priya Sharma</li>
-          <li>Ravi Mehta</li>
-          <li>Neha Kulkarni</li>
+          <li>Utkarsh Gupta</li>
+          <li>Sanket Ghurghure</li>
+          <li>Vaibhav Dhote</li>
         </ul>
       </div>
 

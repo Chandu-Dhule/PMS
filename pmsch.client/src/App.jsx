@@ -1,33 +1,44 @@
-import { Routes, Route } from 'react-router-dom';
+App.jsx
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './styles/index.css';
 import './styles/App.css';
+import './styles/LoginPage.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+ 
 import AddMachine from './AddMachine';
 import LogMaintenance from './LogMaintenance';
 import Dashboard from "./Dashboard";
 import HealthMetrics from "./HealthMetrics";
 import Settings from "./Settings";
 import Home from './Home';
-import ShowAllDetails from './ShowAllDetails'
+import ShowAllDetails from './ShowAllDetails';
 import AppInfo from './AppInfo';
-
+import LoginPage from './LoginPage';
+ 
 function App() {
-  // Dummy data for now
+  const location = useLocation();
+ 
+  // Dummy data
   const totalMachines = 10;
   const maintenanceLogs = 25;
   const goodMachines = 7;
   const badMachines = 3;
-
+ 
+  const isLoginPage = location.pathname === '/';
+ 
   return (
     <div className="app-container">
-      <aside className="sidebar">
-        <Dashboard />
-      </aside>
-
+      {!isLoginPage && (
+        <aside className="sidebar">
+          <Dashboard />
+        </aside>
+      )}
+ 
       <main className="main-content">
         <Routes>
+          <Route path="/" element={<LoginPage />} />
           <Route
-            path="/"
+            path="/home"
             element={
               <Home
                 totalMachines={totalMachines}
@@ -48,4 +59,7 @@ function App() {
     </div>
   );
 }
+ 
 export default App;
+ 
+ 
