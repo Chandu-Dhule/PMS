@@ -1,0 +1,6 @@
+@PMSCH.Server_HostAddress = http://localhost:5073
+
+GET {{PMSCH.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

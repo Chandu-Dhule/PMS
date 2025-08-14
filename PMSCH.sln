@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "pmsch.client", "pmsch.client\pmsch.client.esproj", "{BE1846C9-9C80-BABE-8D9F-F31021E86D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMSCH.Server", "PMSCH.Server\PMSCH.Server.csproj", "{E0375CAA-E2C6-4193-865B-854C73FBD08C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE1846C9-9C80-BABE-8D9F-F31021E86D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1846C9-9C80-BABE-8D9F-F31021E86D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1846C9-9C80-BABE-8D9F-F31021E86D66}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE1846C9-9C80-BABE-8D9F-F31021E86D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1846C9-9C80-BABE-8D9F-F31021E86D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE1846C9-9C80-BABE-8D9F-F31021E86D66}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E0375CAA-E2C6-4193-865B-854C73FBD08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0375CAA-E2C6-4193-865B-854C73FBD08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0375CAA-E2C6-4193-865B-854C73FBD08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0375CAA-E2C6-4193-865B-854C73FBD08C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44EC6020-E482-42F7-A954-2315B301E7B0}
+	EndGlobalSection
+EndGlobal

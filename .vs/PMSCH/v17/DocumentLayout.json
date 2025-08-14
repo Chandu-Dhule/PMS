@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2421026\\source\\repos\\PMSCH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\machinetyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\machinetyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\machinecategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\machinecategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\maintenancelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\maintenancelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\controllers\\machinecategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\machinecategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\source\\repos\\pmsch\\pmsch.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TechnicianMachineAssignmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:23:05.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MachineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAowAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:23:02.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MachineCategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:23:00.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Program.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Program.cs",
+              "RelativeToolTip": "PMSCH.Server\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:18:23.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MachineTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:23:06.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MaintenanceLogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:22:53.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HealthMetricRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAApwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:22:39.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MachineCategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:22:20.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "PMSCH.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\appsettings.json",
+              "RelativeToolTip": "PMSCH.Server\\appsettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-14T05:20:25.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\2421026\\source\\repos\\PMSCH\\pmsch.client\\index.html",
+              "RelativeDocumentMoniker": "pmsch.client\\index.html",
+              "ToolTip": "C:\\Users\\2421026\\source\\repos\\PMSCH\\pmsch.client\\index.html",
+              "RelativeToolTip": "pmsch.client\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-14T05:19:55.416Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
