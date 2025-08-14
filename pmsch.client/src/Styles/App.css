@@ -45,8 +45,10 @@
   /* border: 2px solid var(--dark); */
   overflow: hidden auto;
 }
- 
+
 .dashboard-content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -110,7 +112,7 @@ button:hover {
   /* text-align: center; */
   color: #2c3e50;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   border-bottom: 3px solid #7385c4;
   padding-bottom: 0.5rem;

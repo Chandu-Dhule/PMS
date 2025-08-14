@@ -4,7 +4,8 @@ import './styles/index.css';
 import './styles/App.css';
 import './styles/LoginPage.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
- 
+ import TechnicianDashboard from './TechnicianDashboard';
+
 import AddMachine from './AddMachine';
 import LogMaintenance from './LogMaintenance';
 import Dashboard from "./Dashboard";
@@ -49,6 +50,7 @@ function App() {
             }
           />
           <Route path="/add-machine" element={<AddMachine />} />
+          <Route path="/technician-dashboard" element={<TechnicianDashboard />} />
           <Route path="/log-maintenance" element={<LogMaintenance />} />
           <Route path="/health-metrics" element={<HealthMetrics />} />
           <Route path="/settings" element={<Settings />} />
