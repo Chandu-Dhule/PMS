@@ -35,11 +35,6 @@ const TechnicianDashboard = () => {
     });
   };
 
-  const goToSettings = () => {
-    navigate('/settings', {
-      state: { technicianId },
-    });
-  };
 
   return (
     <div className="technician-dashboard">
@@ -81,7 +76,7 @@ const TechnicianDashboard = () => {
         <button onClick={goToLogMaintenance}>📝 Log Maintenance</button>
         <button onClick={goToHealthMetrics}>📊 Health Metrics</button>
         <button onClick={goToShowAllDetails}>📋 Show All Details</button>
-        <button onClick={goToSettings}>⚙️ Settings</button>
+        {/* <button onClick={goToSettings}>⚙️ Settings</button> */}
       </div>
     </div>
   );
