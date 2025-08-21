@@ -95,7 +95,7 @@ public class LoginController : ControllerBase
         if (userEntity == null)
             return BadRequest("User not found in Users table.");
 
-        _userRepo.SaveToken(userEntity.Id, token, expiry);
+        //_userRepo.SaveToken(userEntity.Id, token, expiry);
 
         return Ok(new
         {   

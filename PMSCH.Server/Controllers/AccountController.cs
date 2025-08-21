@@ -20,17 +20,17 @@ namespace PMSCH.Server.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
-            if (request == null || string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.Password))
+            if (request == null || string.IsNullOrWhiteSpace(request.User) || string.IsNullOrWhiteSpace(request.Pass))
                 return BadRequest(new { message = "Username and password are required." });
 
-            var user = _userRepo.GetUserByUsername(request.Username);
-            if (user == null || !PasswordHelper.VerifyPassword(request.Password, user.PasswordHash))
+            var user = _userRepo.GetUserByUsername(request.User);
+            if (user == null || !PasswordHelper.VerifyPassword(request.Pass, user.PasswordHash))
                 return Unauthorized(new { message = "Invalid credentials" });
 
             var token = Guid.NewGuid().ToString();
             var expiry = DateTime.UtcNow.AddHours(2);
 
-            _userRepo.SaveToken(user.Id, token, expiry);
+            //_userRepo.SaveToken(user.Id, token, expiry);
 
             return Ok(new
             {

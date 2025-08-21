@@ -27,7 +27,7 @@ namespace PMSCH.Server.Repositories
             string machineFilterQuery = role switch
             {
                 "Admin" => "",
-                "Manager" => "WHERE m.CategoryID = (SELECT CategoryID FROM Users WHERE Id = @UserId)",
+                "Manager" => "WHERE m.CategoryID = (SELECT CategoryID FROM Logins WHERE Id = @UserId)",
                 "Technician" => "WHERE m.MachineID IN (SELECT MachineId FROM TechnicianMachineAssignments WHERE UserId = @UserId)",
                 _ => throw new UnauthorizedAccessException("Invalid role")
             };

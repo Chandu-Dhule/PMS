@@ -91,7 +91,7 @@ namespace PMSCH.Server.Repositories
                hm.Temperature
         FROM Machines m
         LEFT JOIN HealthMetrics hm ON m.MachineID = hm.MachineID
-        INNER JOIN Users u ON m.CategoryID = u.CategoryID
+        INNER JOIN Logins u ON m.CategoryID = u.CategoryID
         WHERE u.Id = @ManagerId AND u.Role = 'Manager'";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -152,11 +152,11 @@ namespace PMSCH.Server.Repositories
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"INSERT INTO Machines 
-                                (Name, CategoryID, TypeID, InstallationDate, Status) 
+                                (MachineID, Name, CategoryID, TypeID, InstallationDate, Status) 
                                 VALUES 
-                                (@Name, @CategoryID, @TypeID, @InstallationDate, @Status)";
+                                (@MachineID, @Name, @CategoryID, @TypeID, @InstallationDate, @Status)";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                //cmd.Parameters.AddWithValue("@MachineId", machine.MachineID);
+                cmd.Parameters.AddWithValue("@MachineId", machine.MachineID);
                 cmd.Parameters.AddWithValue("@Name", machine.Name);
                 cmd.Parameters.AddWithValue("@CategoryID", machine.CategoryID);
                 cmd.Parameters.AddWithValue("@TypeID", machine.TypeID);

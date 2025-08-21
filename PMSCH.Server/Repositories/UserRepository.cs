@@ -22,7 +22,7 @@ public class UserRepository : IUserRepository
         using var connection = new SqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("SELECT * FROM Users WHERE Username = @Username", connection);
+        var command = new SqlCommand("SELECT * FROM Logins WHERE [User] = @Username", connection);
         command.Parameters.AddWithValue("@Username", username);
 
         using var reader = command.ExecuteReader();
@@ -40,7 +40,7 @@ public class UserRepository : IUserRepository
         connection.Open();
 
         var command = new SqlCommand(@"
-            INSERT INTO Users (Username, PasswordHash, Role, CategoryID)
+            INSERT INTO Logins (Username, PasswordHash, Role, CategoryID)
             VALUES (@Username, @PasswordHash, @Role, @CategoryID)", connection);
 
         command.Parameters.AddWithValue("@Username", user.Username);
@@ -71,7 +71,7 @@ public class UserRepository : IUserRepository
         using var connection = new SqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("SELECT * FROM Users", connection);
+        var command = new SqlCommand("SELECT * FROM Logins", connection);
         using var reader = command.ExecuteReader();
 
         while (reader.Read())
@@ -82,21 +82,21 @@ public class UserRepository : IUserRepository
         return users;
     }
 
-    public void SaveToken(int userId, string token, DateTime expiry)
-    {
-        using var connection = new SqlConnection(_connectionString);
-        connection.Open();
+    //public void SaveToken(int userId, string token, DateTime expiry)
+    //{
+    //    using var connection = new SqlConnection(_connectionString);
+    //    connection.Open();
 
-        var command = new SqlCommand(@"
-            INSERT INTO Tokens (UserId, Token, Expiry)
-            VALUES (@UserId, @Token, @Expiry)", connection);
+    //    var command = new SqlCommand(@"
+    //        INSERT INTO Tokens (UserId, Token, Expiry)
+    //        VALUES (@UserId, @Token, @Expiry)", connection);
 
-        command.Parameters.AddWithValue("@UserId", userId);
-        command.Parameters.AddWithValue("@Token", token);
-        command.Parameters.AddWithValue("@Expiry", expiry);
+    //    command.Parameters.AddWithValue("@UserId", userId);
+    //    command.Parameters.AddWithValue("@Token", token);
+    //    command.Parameters.AddWithValue("@Expiry", expiry);
 
-        command.ExecuteNonQuery();
-    }
+    //    command.ExecuteNonQuery();
+   // }
 
     public bool ValidateToken(string token)
     {
@@ -123,7 +123,7 @@ public class UserRepository : IUserRepository
 
         var command = new SqlCommand(@"
             SELECT u.Id, u.Username, u.PasswordHash, u.Role, u.CategoryID
-            FROM Users u
+            FROM Logins u
             INNER JOIN Tokens t ON u.Id = t.UserId
             WHERE t.Token = @Token", connection);
 
@@ -163,8 +163,8 @@ public class UserRepository : IUserRepository
         var user = new User
         {
             Id = (int)reader["Id"],
-            Username = reader["Username"].ToString(),
-            PasswordHash = reader["PasswordHash"].ToString(),
+            Username = reader["User"].ToString(),
+            PasswordHash = reader["Pass"].ToString(),
             Role = reader["Role"].ToString(),
             CategoryID = reader["CategoryID"] == DBNull.Value ? null : (int?)reader["CategoryID"]
         };
@@ -195,14 +195,13 @@ public class UserRepository : IUserRepository
                 User = reader["User"].ToString(),
                 Pass = reader["Pass"].ToString(),
                 Role = reader["Role"].ToString(),
-                CategoryId = reader["Id"] != DBNull.Value ? (int)reader["Id"] : 0
-
-
+                CategoryId = reader["CategoryID"] == DBNull.Value ? 0 : Convert.ToInt32(reader["CategoryID"])
             };
         }
 
         return null;
     }
+
 
     public void CreateLogin(Login login)
     {
@@ -231,13 +230,16 @@ public class UserRepository : IUserRepository
             {
                 login.Add(new Login
                 {
-                    User = (string)reader["User"],
+                    Id = (int)reader["Id"],
+                    User = reader["User"].ToString(),
                     Pass = reader["Pass"].ToString(),
-                    Role = (string)reader["Role"]
+                    Role = reader["Role"].ToString(),
+                    CategoryId = reader["CategoryID"] == DBNull.Value ? 0 : Convert.ToInt32(reader["CategoryID"])
                 });
             }
         }
         return login;
     }
+
 
 }

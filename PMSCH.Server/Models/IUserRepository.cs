@@ -12,7 +12,7 @@ namespace PMSCH.Server.Repositories
         IEnumerable<User> GetAllUsers();
 
         // 🔐 Token-based authentication
-        void SaveToken(int userId, string token, DateTime expiry);
+        //void SaveToken(int userId, string token, DateTime expiry);
         bool ValidateToken(string token);
         void DeleteToken(string token);
         User GetUserByToken(string token);

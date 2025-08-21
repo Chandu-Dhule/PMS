@@ -175,7 +175,7 @@ namespace PMSCH.Server.Repositories {
                 string query = @"
         SELECT hm.* FROM HealthMetrics hm
         INNER JOIN Machines m ON hm.MachineID = m.MachineID
-        INNER JOIN Users u ON m.CategoryID = u.CategoryID
+        INNER JOIN Logins u ON m.CategoryID = u.CategoryID
         WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND hm.Temperature > @Threshold";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -246,7 +246,7 @@ namespace PMSCH.Server.Repositories {
                 string query = @"
             SELECT hm.* FROM HealthMetrics hm
             INNER JOIN Machines m ON hm.MachineID = m.MachineID
-            INNER JOIN Users u ON m.CategoryID = u.CategoryID
+            INNER JOIN Logins u ON m.CategoryID = u.CategoryID
             WHERE u.Id = @ManagerId AND u.Role = 'Manager'
             ORDER BY hm.CheckDate DESC";
 
