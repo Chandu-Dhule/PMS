@@ -8,6 +8,8 @@
         public int TypeID { get; set; }
         public DateTime InstallationDate { get; set; }
         public string Status { get; set; }
+
+        public float? Temperature { get; set; }
     }
 
 }

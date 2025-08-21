@@ -43,11 +43,11 @@ namespace PMSCH.Server.Controllers
         [HttpPost("logout")]
         public IActionResult Logout([FromHeader(Name = "X-Custom-Token")] string token)
         {
-            if (string.IsNullOrWhiteSpace(token))
-                return BadRequest(new { message = "Token is missing" });
+            //if (string.IsNullOrWhiteSpace(token))
+            //    return BadRequest(new { message = "Token is missing" });
 
-            if (!_userRepo.ValidateToken(token))
-                return Unauthorized(new { message = "Invalid or expired token" });
+            //if (!_userRepo.ValidateToken(token))
+            //    return Unauthorized(new { message = "Invalid or expired token" });
 
             _userRepo.DeleteToken(token);
             return Ok(new { message = "Logged out successfully" });
@@ -56,11 +56,11 @@ namespace PMSCH.Server.Controllers
         [HttpPost("create-user")]
         public IActionResult CreateUser([FromHeader(Name = "X-Custom-Token")] string token, [FromBody] User newUser)
         {
-            if (string.IsNullOrWhiteSpace(token))
-                return BadRequest(new { message = "Token is missing" });
+            //if (string.IsNullOrWhiteSpace(token))
+            //    return BadRequest(new { message = "Token is missing" });
 
-            if (!_userRepo.ValidateToken(token))
-                return Unauthorized(new { message = "Invalid or expired token" });
+            //if (!_userRepo.ValidateToken(token))
+            //    return Unauthorized(new { message = "Invalid or expired token" });
 
             var currentUser = _userRepo.GetUserByToken(token);
             if (currentUser == null || currentUser.Role != "Admin")
@@ -81,11 +81,11 @@ namespace PMSCH.Server.Controllers
         [HttpGet("me")]
         public IActionResult GetCurrentUser([FromHeader(Name = "X-Custom-Token")] string token)
         {
-            if (string.IsNullOrWhiteSpace(token))
-                return BadRequest(new { message = "Token is missing" });
+            //if (string.IsNullOrWhiteSpace(token))
+            //    return BadRequest(new { message = "Token is missing" });
 
-            if (!_userRepo.ValidateToken(token))
-                return Unauthorized(new { message = "Invalid or expired token" });
+            //if (!_userRepo.ValidateToken(token))
+            //    return Unauthorized(new { message = "Invalid or expired token" });
 
             var user = _userRepo.GetUserByToken(token);
             if (user == null)

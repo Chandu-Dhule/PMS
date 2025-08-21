@@ -1,5 +1,7 @@
 ﻿using PMSCH.Server.Models;
 using Microsoft.Data.SqlClient;
+using System;
+using System.Collections.Generic;
 
 namespace PMSCH.Server.Repositories
 {
@@ -53,6 +55,54 @@ namespace PMSCH.Server.Repositories
                 cmd.Parameters.AddWithValue("@MachineId", machineId);
                 cmd.ExecuteNonQuery();
             }
+        }
+
+        public List<dynamic> GetDetailedAssignmentsByUsername(string username)
+        {
+            var assignments = new List<dynamic>();
+
+            using (var conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                    SELECT
+                        m.MachineID,
+                        m.Name AS MachineName,
+                        mc.CategoryName,
+                        mt.TypeName,
+                        m.InstallationDate,
+                        m.Status
+                       
+                    FROM TechnicianMachineAssignments tma
+                    JOIN Machines m ON tma.MachineId = m.MachineID
+                    JOIN MachineCategories mc ON m.CategoryID = mc.CategoryID
+                    JOIN MachineTypes mt ON m.TypeID = mt.TypeID
+                    JOIN Users u ON tma.UserId = u.Id
+                    WHERE u.Role = 'Technician' AND u.Username = @Username";
+
+                var cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Username", username);
+
+                conn.Open();
+                var reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    assignments.Add(new
+                    {
+                        MachineID = Convert.ToInt32(reader["MachineID"]),
+                        MachineName = reader["MachineName"].ToString(),
+                        CategoryName = reader["CategoryName"].ToString(),
+                        TypeName = reader["TypeName"].ToString(),
+                        InstallationDate = Convert.ToDateTime(reader["InstallationDate"]),
+                        Status = reader["Status"].ToString(),
+                        LifeCycle = Convert.ToInt32(reader["LifeCycle"])
+                    });
+                }
+
+                reader.Close();
+            }
+
+            return assignments;
         }
     }
 }

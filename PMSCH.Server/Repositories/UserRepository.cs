@@ -176,4 +176,68 @@ public class UserRepository : IUserRepository
 
         return user;
     }
+
+    //-------------------------------------
+    public Login GetLogin(string user)
+    {
+        using var connection = new SqlConnection(_connectionString);
+        connection.Open();
+
+        var command = new SqlCommand("SELECT * FROM Logins WHERE [User] = @User", connection);
+        command.Parameters.AddWithValue("@User", user);
+
+        using var reader = command.ExecuteReader();
+        if (reader.Read())
+        {
+            return new Login
+            {
+                Id = (int)reader["Id"],
+                User = reader["User"].ToString(),
+                Pass = reader["Pass"].ToString(),
+                Role = reader["Role"].ToString(),
+                CategoryId = reader["Id"] != DBNull.Value ? (int)reader["Id"] : 0
+
+
+            };
+        }
+
+        return null;
+    }
+
+    public void CreateLogin(Login login)
+    {
+        using var connection = new SqlConnection(_connectionString);
+        connection.Open();
+
+        var command = new SqlCommand("INSERT INTO Logins ([User], [Pass], [Role]) VALUES (@User, @Pass, @Role)", connection);
+        command.Parameters.AddWithValue("@User", login.User);
+        command.Parameters.AddWithValue("@Pass", login.Pass);
+        command.Parameters.AddWithValue("@Role", login.Role);
+
+
+        command.ExecuteNonQuery();
+    }
+
+    public List<Login> GetAll()
+    {
+        var login = new List<Login>();
+        using (SqlConnection conn = new SqlConnection(_connectionString))
+        {
+            string query = "SELECT * FROM Logins";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                login.Add(new Login
+                {
+                    User = (string)reader["User"],
+                    Pass = reader["Pass"].ToString(),
+                    Role = (string)reader["Role"]
+                });
+            }
+        }
+        return login;
+    }
+
 }

@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:60188",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Users\\2421026\\source\\repos\\PMSCH\\PMSCH.Server\\..\\pmsch.client",
+"WorkingDirectory": "C:\\Users\\2420961\\OneDrive - Cognizant\\Desktop\\backend-working\\PMSCH.Server\\..\\pmsch.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

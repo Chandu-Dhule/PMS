@@ -23,8 +23,8 @@ namespace PMSCH.Server.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            if (!TokenValidator.IsTokenValid(Request, _userRepo))
-                return Unauthorized("Invalid or missing token");
+            //if (!TokenValidator.IsTokenValid(Request, _userRepo))
+            //    return Unauthorized("Invalid or missing token");
 
             return Ok(_repository.GetAll());
         }
@@ -32,8 +32,8 @@ namespace PMSCH.Server.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] MachineCategory category)
         {
-            if (!TokenValidator.IsTokenValid(Request, _userRepo))
-                return Unauthorized("Invalid or missing token");
+            //if (!TokenValidator.IsTokenValid(Request, _userRepo))
+            //    return Unauthorized("Invalid or missing token");
 
             _repository.Add(category);
             return Ok(category);

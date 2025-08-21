@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact", policy =>
     {
-        policy.WithOrigins("http://localhost:60188")
+        policy.WithOrigins("http://localhost:5173")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -25,6 +25,9 @@ builder.Services.AddScoped<MachineCategoryRepository>();
 builder.Services.AddScoped<MachineTypeRepository>();
 builder.Services.AddScoped<HealthMetricRepository>();
 builder.Services.AddScoped<MaintenanceLogRepository>();
+//--------------------------------------------
+builder.Services.AddScoped<UserRepository>();
+
 
 builder.Services.AddScoped<TechnicianMachineAssignmentRepository>(provider =>
 {
@@ -38,6 +41,12 @@ builder.Services.AddScoped<IUserRepository>(provider =>
     var config = provider.GetRequiredService<IConfiguration>();
     var assignmentRepo = provider.GetRequiredService<TechnicianMachineAssignmentRepository>();
     return new UserRepository(config, assignmentRepo);
+});
+// ✅ Register AnalysisRepository
+builder.Services.AddScoped<IAnalysisRepository>(provider =>{
+var config = provider.GetRequiredService<IConfiguration>();
+var connectionString = config.GetConnectionString("DefaultConnection");
+return new AnalysisRepository(connectionString);
 });
 
 // Add role-based authorization policies

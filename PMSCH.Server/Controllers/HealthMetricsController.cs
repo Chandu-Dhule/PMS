@@ -18,16 +18,44 @@ namespace PMSCH.Server.Controllers
             _userRepo = userRepo;
         }
 
-        [HttpGet]
-        public IActionResult GetAllMetrics()
+        
+        [HttpGet("metrics/by-role")]
+        public IActionResult GetMetricsByRoleAndId([FromQuery] string role, [FromQuery] int userId)
         {
-            // Optional: enable token validation
-            // if (!TokenValidator.IsTokenValid(Request, _userRepo))
-            //     return Unauthorized("Invalid or missing token");
+            if (string.IsNullOrWhiteSpace(role))
+                return BadRequest("Role is required.");
 
-            var metrics = _repository.GetAll();
-            return Ok(metrics);
+            List<HealthMetric> metrics;
+
+            try
+            {
+                switch (role.Trim().ToLower())
+                {
+                    case "technician":
+                        metrics = _repository.GetHealthMetricsByTechnician(userId);
+                        break;
+
+                    case "manager":
+                        metrics = _repository.GetHealthMetricsByManager(userId);
+                        break;
+
+                    case "admin":
+                        metrics = _repository.GetAll();
+                        break;
+
+                    default:
+                        return BadRequest("Invalid role. Valid roles are: Technician, Manager, Admin.");
+                }
+
+                return Ok(metrics);
+            }
+            catch (Exception ex)
+            {
+                // Optional: log the exception
+                return StatusCode(500, $"An error occurred while fetching metrics: {ex.Message}");
+            }
         }
+
 
         //  Get all health metrics for a specific machine
         [HttpGet("machine/{machineId}")]
@@ -53,15 +81,29 @@ namespace PMSCH.Server.Controllers
             return Ok(metric);
         }
 
-        [HttpGet("critical")]
-        public IActionResult GetCriticalMachines([FromQuery] float threshold = 80.0f)
+        [HttpGet("critical-metrics")]
+        public IActionResult GetCriticalMachinesByRole([FromQuery] string role, [FromQuery] int userId, [FromQuery] float threshold = 80.0f)
         {
-            //if (!TokenValidator.IsTokenValid(Request, _userRepo))
-            //    return Unauthorized("Invalid or missing token");
+            List<HealthMetric> metrics;
 
-            var criticalMachines = _repository.GetCriticalMachines(threshold);
-            return Ok(criticalMachines);
+            switch (role.Trim().ToLower())
+            {
+                case "technician":
+                    metrics = _repository.GetCriticalMachinesByTechnician(userId, threshold);
+                    break;
+                case "manager":
+                    metrics = _repository.GetCriticalMachinesByManager(userId, threshold);
+                    break;
+                case "admin":
+                    metrics = _repository.GetCriticalMachines(threshold);
+                    break;
+                default:
+                    return BadRequest("Invalid role. Valid roles are: Technician, Manager, Admin.");
+            }
+
+            return Ok(metrics);
         }
+
 
     }
 }

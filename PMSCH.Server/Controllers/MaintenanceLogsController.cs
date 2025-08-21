@@ -18,31 +18,59 @@ namespace PMSCH.Server.Controllers
             _userRepo = userRepo;
         }
 
-        private string GetToken() => Request.Headers["X-Custom-Token"].FirstOrDefault();
+        //private string GetToken() => Request.Headers["X-Custom-Token"].FirstOrDefault();
 
-        private bool IsTokenValid()
-        {
-            var token = GetToken();
-            return !string.IsNullOrEmpty(token) && _userRepo.ValidateToken(token);
-        }
+        //private bool IsTokenValid()
+        //{
+        //    var token = GetToken();
+        //    return !string.IsNullOrEmpty(token) && _userRepo.ValidateToken(token);
+        //}
 
-        private bool IsAdmin()
-        {
-            var token = GetToken();
-            var user = _userRepo.GetUserByToken(token);
-            return user != null && user.Role == "Admin";
-        }
+        //private bool IsAdmin()
+        //{
+        //    var token = GetToken();
+        //    var user = _userRepo.GetUserByToken(token);
+        //    return user != null && user.Role == "Admin";
+        //}
 
         // ✅ Get all maintenance logs
-        [HttpGet]
-        public IActionResult GetAllLogs()
+        [HttpGet("logs/by-role")]
+        public IActionResult GetLogsByRoleAndId([FromQuery] string role, [FromQuery] int userId)
         {
-            // Optional: enable token validation
-            // if (!IsTokenValid()) return Unauthorized("Invalid or missing token");
+            if (string.IsNullOrWhiteSpace(role))
+                return BadRequest("Role is required.");
 
-            var logs = _repository.GetAll();
-            return Ok(logs);
+            List<MaintenanceLog> logs;
+
+            try
+            {
+                switch (role.Trim().ToLower())
+                {
+                    case "technician":
+                        logs = _repository.GetLogsByTechnician(userId);
+                        break;
+
+                    case "manager":
+                        logs = _repository.GetLogsByManager(userId);
+                        break;
+
+                    case "admin":
+                        logs = _repository.GetAll();
+                        break;
+
+                    default:
+                        return BadRequest("Invalid role. Valid roles are: Technician, Manager, Admin.");
+                }
+
+                return Ok(logs);
+            }
+            catch (Exception ex)
+            {
+                // Optional: log the exception
+                return StatusCode(500, $"An error occurred while fetching logs: {ex.Message}");
+            }
         }
+
 
         // ✅ Get logs by machine ID
         [HttpGet("machine/{machineId}")]

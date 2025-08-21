@@ -34,8 +34,8 @@ namespace PMSCH.Server.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            if (!IsTokenValid())
-                return Unauthorized("Invalid or missing token");
+            //if (!IsTokenValid())
+            //    return Unauthorized("Invalid or missing token");
 
             return Ok(_repository.GetAll());
         }
@@ -43,8 +43,8 @@ namespace PMSCH.Server.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            if (!IsTokenValid())
-                return Unauthorized("Invalid or missing token");
+            //if (!IsTokenValid())
+            //    return Unauthorized("Invalid or missing token");
 
             var type = _repository.GetById(id);
             return type == null ? NotFound() : Ok(type);
@@ -53,8 +53,8 @@ namespace PMSCH.Server.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] MachineType type)
         {
-            if (!IsTokenValid())
-                return Unauthorized("Invalid or missing token");
+            //if (!IsTokenValid())
+            //    return Unauthorized("Invalid or missing token");
 
             if (!IsAdmin())
                 return Forbid("Admin access required");
@@ -66,8 +66,8 @@ namespace PMSCH.Server.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            if (!IsTokenValid())
-                return Unauthorized("Invalid or missing token");
+            //if (!IsTokenValid())
+            //    return Unauthorized("Invalid or missing token");
 
             if (!IsAdmin())
                 return Forbid("Admin access required");

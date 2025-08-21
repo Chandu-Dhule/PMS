@@ -102,30 +102,177 @@ namespace PMSCH.Server.Repositories {
                 }
             }
 
-            //  Get machines with critical health metrics (example: Temperature > threshold)
-            public List<int> GetCriticalMachines(float temperatureThreshold = 80.0f)
+        //  Get machines with critical health metrics (example: Temperature > threshold)
+        public List<HealthMetric> GetCriticalMachines(float temperatureThreshold = 80.0f)
+        {
+            var machineDetails = new List<HealthMetric>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                var machineIds = new List<int>();
+                string query = "SELECT * FROM HealthMetrics WHERE Temperature > @Threshold";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
 
-                using (SqlConnection conn = new SqlConnection(_connectionString))
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
                 {
-                    string query = "SELECT DISTINCT MachineID FROM HealthMetrics WHERE Temperature > @Threshold";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
-
-                    conn.Open();
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
+                    machineDetails.Add(new HealthMetric
                     {
-                        machineIds.Add(Convert.ToInt32(reader["MachineID"]));
-                    }
-
-                    reader.Close();
+                        MetricID = Convert.ToInt32(reader["MetricID"]),
+                        MachineID = Convert.ToInt32(reader["MachineID"]),
+                        CheckDate = Convert.ToDateTime(reader["CheckDate"]),
+                        Temperature = Convert.ToSingle(reader["Temperature"]),
+                        EnergyConsumption = Convert.ToSingle(reader["EnergyConsumption"]),
+                        HealthStatus = reader["HealthStatus"].ToString()
+                    });
                 }
-
-                return machineIds;
             }
+
+            return machineDetails;
         }
+        public List<HealthMetric> GetCriticalMachinesByTechnician(int technicianId, float temperatureThreshold = 80.0f)
+        {
+            var machineDetails = new List<HealthMetric>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+        SELECT hm.* FROM HealthMetrics hm
+        INNER JOIN TechnicianMachineAssignments tma ON hm.MachineID = tma.MachineId
+        WHERE tma.UserId = @TechnicianId AND hm.Temperature > @Threshold";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@TechnicianId", technicianId);
+                cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    machineDetails.Add(new HealthMetric
+                    {
+                        MetricID = Convert.ToInt32(reader["MetricID"]),
+                        MachineID = Convert.ToInt32(reader["MachineID"]),
+                        CheckDate = Convert.ToDateTime(reader["CheckDate"]),
+                        Temperature = Convert.ToSingle(reader["Temperature"]),
+                        EnergyConsumption = Convert.ToSingle(reader["EnergyConsumption"]),
+                        HealthStatus = reader["HealthStatus"].ToString()
+                    });
+                }
+            }
+
+            return machineDetails;
+        }
+        public List<HealthMetric> GetCriticalMachinesByManager(int managerId, float temperatureThreshold = 80.0f)
+        {
+            var machineDetails = new List<HealthMetric>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+        SELECT hm.* FROM HealthMetrics hm
+        INNER JOIN Machines m ON hm.MachineID = m.MachineID
+        INNER JOIN Users u ON m.CategoryID = u.CategoryID
+        WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND hm.Temperature > @Threshold";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@ManagerId", managerId);
+                cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    machineDetails.Add(new HealthMetric
+                    {
+                        MetricID = Convert.ToInt32(reader["MetricID"]),
+                        MachineID = Convert.ToInt32(reader["MachineID"]),
+                        CheckDate = Convert.ToDateTime(reader["CheckDate"]),
+                        Temperature = Convert.ToSingle(reader["Temperature"]),
+                        EnergyConsumption = Convert.ToSingle(reader["EnergyConsumption"]),
+                        HealthStatus = reader["HealthStatus"].ToString()
+                    });
+                }
+            }
+
+            return machineDetails;
+        }
+
+
+        public List<HealthMetric> GetHealthMetricsByTechnician(int technicianId)
+        {
+            var metrics = new List<HealthMetric>();
+
+            using (var conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+            SELECT hm.* FROM HealthMetrics hm
+            INNER JOIN TechnicianMachineAssignments tma ON hm.MachineID = tma.MachineId
+            WHERE tma.UserId = @TechnicianId
+            ORDER BY hm.CheckDate DESC";
+
+                var cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@TechnicianId", technicianId);
+
+                conn.Open();
+                var reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    metrics.Add(new HealthMetric
+                    {
+                        MetricID = Convert.ToInt32(reader["MetricID"]),
+                        MachineID = Convert.ToInt32(reader["MachineID"]),
+                        CheckDate = Convert.ToDateTime(reader["CheckDate"]),
+                        Temperature = Convert.ToSingle(reader["Temperature"]),
+                        EnergyConsumption = Convert.ToSingle(reader["EnergyConsumption"]),
+                        HealthStatus = reader["HealthStatus"].ToString()
+                    });
+                }
+            }
+
+            return metrics;
+        }
+        public List<HealthMetric> GetHealthMetricsByManager(int managerId)
+        {
+            var metrics = new List<HealthMetric>();
+
+            using (var conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+            SELECT hm.* FROM HealthMetrics hm
+            INNER JOIN Machines m ON hm.MachineID = m.MachineID
+            INNER JOIN Users u ON m.CategoryID = u.CategoryID
+            WHERE u.Id = @ManagerId AND u.Role = 'Manager'
+            ORDER BY hm.CheckDate DESC";
+
+                var cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@ManagerId", managerId);
+
+                conn.Open();
+                var reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    metrics.Add(new HealthMetric
+                    {
+                        MetricID = Convert.ToInt32(reader["MetricID"]),
+                        MachineID = Convert.ToInt32(reader["MachineID"]),
+                        CheckDate = Convert.ToDateTime(reader["CheckDate"]),
+                        Temperature = Convert.ToSingle(reader["Temperature"]),
+                        EnergyConsumption = Convert.ToSingle(reader["EnergyConsumption"]),
+                        HealthStatus = reader["HealthStatus"].ToString()
+                    });
+                }
+            }
+
+            return metrics;
+        }
+
     }
+}
 
