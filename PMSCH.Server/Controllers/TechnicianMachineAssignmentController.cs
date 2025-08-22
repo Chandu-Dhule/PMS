@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using PMSCH.Server.Models;
 using PMSCH.Server.Repositories;
 using System.Collections.Generic;
 
@@ -25,6 +26,17 @@ namespace PMSCH.Server.Controllers
                 return NotFound("No assignments found for the technician.");
 
             return Ok(assignments);
+        }
+
+        [HttpPost("assign")]
+        public IActionResult AssignTechnician([FromBody] TechnicianMachineAssignment assignment)
+        {
+            string result = _repository.AssignTechnician(assignment);
+
+            if (result == "Machine already assigned")
+                return Conflict(new { message = result });
+
+            return Ok(new { message = result });
         }
     }
 }

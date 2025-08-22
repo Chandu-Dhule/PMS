@@ -39,30 +39,47 @@ public class UserRepository : IUserRepository
         using var connection = new SqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand(@"
-            INSERT INTO Logins (Username, PasswordHash, Role, CategoryID)
-            VALUES (@Username, @PasswordHash, @Role, @CategoryID)", connection);
+        // Insert user into Logins table
+        var insertCommand = new SqlCommand(@"
+        INSERT INTO Logins (Username, PasswordHash, Role, CategoryID)
+        VALUES (@Username, @PasswordHash, @Role, @CategoryID);
+        SELECT SCOPE_IDENTITY();", connection); // Returns newly inserted ID
 
-        command.Parameters.AddWithValue("@Username", user.Username);
-        command.Parameters.AddWithValue("@PasswordHash", user.PasswordHash);
-        command.Parameters.AddWithValue("@Role", user.Role);
-        command.Parameters.AddWithValue("@CategoryID", user.CategoryID ?? (object)DBNull.Value);
+        insertCommand.Parameters.AddWithValue("@Username", user.Username);
+        insertCommand.Parameters.AddWithValue("@PasswordHash", user.PasswordHash);
+        insertCommand.Parameters.AddWithValue("@Role", user.Role);
+        insertCommand.Parameters.AddWithValue("@CategoryID", user.CategoryID ?? (object)DBNull.Value);
 
-        command.ExecuteNonQuery();
+        // Get the newly created user ID
+        int newUserId = Convert.ToInt32(insertCommand.ExecuteScalar());
 
         // Assign machines if Technician
         if (user.Role == "Technician" && user.AssignedMachineIds != null && user.AssignedMachineIds.Any())
         {
-            var createdUser = GetUserByUsername(user.Username);
-            if (createdUser != null)
+            foreach (var machineId in user.AssignedMachineIds)
             {
-                foreach (var machineId in user.AssignedMachineIds)
+                // Check if machine is already assigned
+                var checkCommand = new SqlCommand(@"
+                SELECT COUNT(*) FROM TechnicianMachineAssignments 
+                WHERE MachineId = @MachineId", connection);
+                checkCommand.Parameters.AddWithValue("@MachineId", machineId);
+
+                int count = (int)checkCommand.ExecuteScalar();
+                if (count == 0)
                 {
-                    _assignmentRepository.AssignMachine(createdUser.Id, machineId);
+                    // Assign technician to machine
+                    var assignCommand = new SqlCommand(@"
+                    INSERT INTO TechnicianMachineAssignments (UserId, MachineId)
+                    VALUES (@UserId, @MachineId)", connection);
+                    assignCommand.Parameters.AddWithValue("@UserId", newUserId);
+                    assignCommand.Parameters.AddWithValue("@MachineId", machineId);
+                    assignCommand.ExecuteNonQuery();
                 }
+                // Optional: else log or notify that machine is already assigned
             }
         }
     }
+
 
     public IEnumerable<User> GetAllUsers()
     {
@@ -208,14 +225,25 @@ public class UserRepository : IUserRepository
         using var connection = new SqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("INSERT INTO Logins ([User], [Pass], [Role]) VALUES (@User, @Pass, @Role)", connection);
+        var command = new SqlCommand(@"
+        INSERT INTO Logins (ID, [User], [Pass], [Role], [CategoryID]) 
+        VALUES (@Id, @User, @Pass, @Role, @CategoryID)", connection);
+
+        command.Parameters.AddWithValue("@Id", login.Id);
         command.Parameters.AddWithValue("@User", login.User);
         command.Parameters.AddWithValue("@Pass", login.Pass);
         command.Parameters.AddWithValue("@Role", login.Role);
 
+        // Handle nullable CategoryID
+        if (login.CategoryId == 0)
+            command.Parameters.AddWithValue("@CategoryID", DBNull.Value);
+        else
+            command.Parameters.AddWithValue("@CategoryID", login.CategoryId);
 
         command.ExecuteNonQuery();
     }
+
+
 
     public List<Login> GetAll()
     {

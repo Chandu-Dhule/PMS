@@ -6,36 +6,48 @@ function AppInfo() {
     <div className="info-wrapper">
       <h2>Application Information</h2>
 
-      <div className="info-section">
-        <h3>About the Application</h3>
-        <p>This Predictive Maintenance Scheduler helps monitor industrial machines, track health metrics, and schedule maintenance proactively to reduce downtime and improve efficiency.</p>
-      </div>
+      <p><strong>About the Application:</strong> Machine Minder is a Predictive Maintenance Scheduler designed to monitor industrial machines, track health metrics, and schedule maintenance proactively. It helps reduce downtime, optimize performance, and extend machine lifespan.</p>
 
-      <div className="info-section">
-        <h3>Version</h3>
-        <p>v1.0.0 – Initial Release</p>
-      </div>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Real-time machine health monitoring</li>
+        <li>Automated maintenance scheduling</li>
+        <li>Role-based dashboards for Admin, Manager, and Technician</li>
+        <li>Data visualization and analysis tools</li>
+        <li>User management and access control</li>
+      </ul>
 
-      <div className="info-section">
-        <h3>Contact Us</h3>
-        <p>Email: support@maintenancescheduler.com</p>
-        <p>Phone: +91 98765 XXXXX</p>
-      </div>
+      <p><strong>Version:</strong> v1.0.0 – Initial Release</p>
 
-      <div className="info-section">
-        <h3>Development Team</h3>
-        <ul>
-          <li>Chandrakant Dhule</li>
-          <li>Utkarsh Gupta</li>
-          <li>Sanket Ghurghure</li>
-          <li>Vaibhav Dhote</li>
-        </ul>
-      </div>
+      <p><strong>Technology Stack:</strong></p>
+      <ul>
+        <li>Frontend: React.js</li>
+        <li>Backend: ASP.NET Core Web API</li>
+        <li>Database: SQL Server</li>
+        <li>Styling: CSS3 with responsive design</li>
+      </ul>
 
-      <div className="info-section">
-        <h3>Additional Notes</h3>
-        <p>This project is a prototype built for demonstration and learning purposes. Future versions may include real-time sensor integration, machine learning models, and cloud-based analytics.</p>
-      </div>
+      <p><strong>Contact Us:</strong><br />
+        Email: support@maintenancescheduler.com<br />
+        Phone: +91 98765 XXXXX
+      </p>
+
+      <p><strong>Development Team:</strong><br />
+        Chandrakant Dhule<br />
+        Utkarsh Gupta<br />
+        Sanket Ghurghure<br />
+        Vaibhav Dhote
+      </p>
+
+      <p><strong>Future Enhancements:</strong></p>
+      <ul>
+        <li>Integration with IoT sensors for live data</li>
+        <li>Machine learning models for predictive analytics</li>
+        <li>Cloud-based deployment and scalability</li>
+        <li>Mobile app support for technicians</li>
+      </ul>
+
+      <p><strong>Disclaimer:</strong> This project is a prototype built for academic and demonstration purposes. It may not reflect production-grade security or scalability features.</p>
     </div>
   );
 }

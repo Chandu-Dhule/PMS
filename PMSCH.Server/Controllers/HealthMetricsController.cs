@@ -82,20 +82,20 @@ namespace PMSCH.Server.Controllers
         }
 
         [HttpGet("critical-metrics")]
-        public IActionResult GetCriticalMachinesByRole([FromQuery] string role, [FromQuery] int userId, [FromQuery] float threshold = 80.0f)
+        public IActionResult GetCriticalMachinesByRole([FromQuery] string role, [FromQuery] int userId, [FromQuery] float threshold = 80.0f, [FromQuery] float Energy=100.0f)
         {
             List<HealthMetric> metrics;
 
             switch (role.Trim().ToLower())
             {
                 case "technician":
-                    metrics = _repository.GetCriticalMachinesByTechnician(userId, threshold);
+                    metrics = _repository.GetCriticalMachinesByTechnician(userId, threshold,Energy);
                     break;
                 case "manager":
-                    metrics = _repository.GetCriticalMachinesByManager(userId, threshold);
+                    metrics = _repository.GetCriticalMachinesByManager(userId, threshold, Energy);
                     break;
                 case "admin":
-                    metrics = _repository.GetCriticalMachines(threshold);
+                    metrics = _repository.GetCriticalMachines(threshold,Energy);
                     break;
                 default:
                     return BadRequest("Invalid role. Valid roles are: Technician, Manager, Admin.");

@@ -87,7 +87,7 @@ namespace PMSCH.Server.Repositories
                 string query = @"
             SELECT ml.* FROM MaintenanceLogs ml
             INNER JOIN Machines m ON ml.MachineID = m.MachineID
-            INNER JOIN Users u ON m.CategoryID = u.CategoryID
+            INNER JOIN Logins u ON m.CategoryID = u.CategoryID
             WHERE u.Id = @ManagerId AND u.Role = 'Manager'
             ORDER BY ml.MaintenanceDate";
 
@@ -154,22 +154,45 @@ namespace PMSCH.Server.Repositories
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"INSERT INTO MaintenanceLogs 
-                                (MachineID, MaintenanceDate, Description, OperatorName, NextDueDate) 
-                                VALUES 
-                                (@MachineID, @MaintenanceDate, @Description, @OperatorName, @NextDueDate)";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MachineID", log.MachineID);
-                cmd.Parameters.AddWithValue("@MaintenanceDate", log.MaintenanceDate);
-                cmd.Parameters.AddWithValue("@Description", log.Description);
-                cmd.Parameters.AddWithValue("@OperatorName", log.OperatorName);
-                cmd.Parameters.AddWithValue("@NextDueDate", log.NextDueDate);
-
                 conn.Open();
-                cmd.ExecuteNonQuery();
+
+                // Insert maintenance log
+                string insertLogQuery = @"INSERT INTO MaintenanceLogs 
+                                  (LogID,MachineID, MaintenanceDate, Description, OperatorName, NextDueDate) 
+                                  VALUES 
+                                  (@LogID,@MachineID, @MaintenanceDate, @Description, @OperatorName, @NextDueDate)";
+                SqlCommand logCmd = new SqlCommand(insertLogQuery, conn);
+                logCmd.Parameters.AddWithValue("@LogID", log.LogID);
+                logCmd.Parameters.AddWithValue("@MachineID", log.MachineID);
+                logCmd.Parameters.AddWithValue("@MaintenanceDate", log.MaintenanceDate);
+                logCmd.Parameters.AddWithValue("@Description", log.Description);
+                logCmd.Parameters.AddWithValue("@OperatorName", log.OperatorName);
+                logCmd.Parameters.AddWithValue("@NextDueDate", log.NextDueDate);
+                logCmd.ExecuteNonQuery();
+
+                // Update latest HealthMetric for this machine
+                string updateMetricQuery = @"UPDATE HealthMetrics 
+                                     SET Temperature = @Temperature, 
+                                         EnergyConsumption = @EnergyConsumption, 
+                                         HealthStatus = @HealthStatus, 
+                                         CheckDate = @CheckDate
+                                     WHERE MachineID = @MachineID 
+                                     AND MetricID = (
+                                         SELECT TOP 1 MetricID 
+                                         FROM HealthMetrics 
+                                         WHERE MachineID = @MachineID 
+                                         ORDER BY CheckDate DESC
+                                     )";
+                SqlCommand metricCmd = new SqlCommand(updateMetricQuery, conn);
+                metricCmd.Parameters.AddWithValue("@Temperature", log.Temperature);
+                metricCmd.Parameters.AddWithValue("@EnergyConsumption", log.EnergyConsumption);
+                metricCmd.Parameters.AddWithValue("@HealthStatus", log.HealthStatus);
+                metricCmd.Parameters.AddWithValue("@CheckDate", DateTime.Now);
+                metricCmd.Parameters.AddWithValue("@MachineID", log.MachineID);
+                metricCmd.ExecuteNonQuery();
             }
         }
+
 
         // ✅ Get machines due for maintenance
         public List<int> GetMachinesDue()

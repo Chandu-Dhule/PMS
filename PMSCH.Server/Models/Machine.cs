@@ -9,7 +9,12 @@
         public DateTime InstallationDate { get; set; }
         public string Status { get; set; }
 
+        public int LifeCycle { get; set; }
         public float? Temperature { get; set; }
+        public float? EnergyConsumption { get; set; }
+        public string HealthStatus { get; set; }
+
+
     }
 
 }

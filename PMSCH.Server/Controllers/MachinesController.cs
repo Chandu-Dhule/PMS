@@ -95,9 +95,14 @@ namespace PMSCH.Server.Controllers
             //if (!IsAdmin())
             //    return Forbid("Admin access required");
 
-            _repository.Add(machine);
+            bool added = _repository.Add(machine);
+
+            if (!added)
+                return Conflict($"Machine with ID {machine.MachineID} already exists.");
+
             return CreatedAtAction(nameof(GetById), new { id = machine.MachineID }, machine);
         }
+
 
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] Machine machine)
@@ -113,32 +118,39 @@ namespace PMSCH.Server.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+
+        public IActionResult DeleteMachine(int id)
+
         {
-            try
+
+            bool deleted = _repository.Delete(id);
+
+            if (!deleted)
+
             {
-                _repository.Delete(id);
-                return NoContent(); // 204 if successful
+
+                return NotFound($"Machine with ID {id} does not exist.");
+
             }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message); // 404 if machine not found
-            }
+
+            return NoContent(); // 204
+
         }
 
 
-        [HttpPost("assign")]
-        public IActionResult AssignMachineToTechnician([FromQuery] int userId, [FromQuery] int machineId)
-        {
-            //if (!IsTokenValid())
-            //    return Unauthorized("Invalid or missing token");
 
-            //if (!IsAdmin())
-            //    return Forbid("Admin access required");
+        //[HttpPost("assign")]
+        //public IActionResult AssignMachineToTechnician([FromQuery] int userId, [FromQuery] int machineId)
+        //{
+        //    //if (!IsTokenValid())
+        //    //    return Unauthorized("Invalid or missing token");
 
-            _assignmentRepository.AssignMachine(userId, machineId);
-            return Ok(new { message = "Machine assigned successfully." });
-        }
+        //    //if (!IsAdmin())
+        //    //    return Forbid("Admin access required");
+
+        //    _assignmentRepository.AssignMachine(userId, machineId);
+        //    return Ok(new { message = "Machine assigned successfully." });
+        //}
 
         [HttpDelete("unassign")]
         public IActionResult UnassignMachineFromTechnician([FromQuery] int userId, [FromQuery] int machineId)

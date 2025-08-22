@@ -65,47 +65,36 @@ public class LoginController : ControllerBase
         // Hash password
         login.Pass = HashPassword(login.Pass);
 
-        // Insert into Logins table
+        // Insert into Logins table only
         _userRepo.CreateLogin(login);
-
-        // Insert into Users table
-        var user = new User
-        {
-            Username = login.User,
-            PasswordHash = login.Pass,
-            Role = login.Role,
-            CategoryID = null
-        };
-        _userRepo.AddUser(user);
 
         return Ok("User registered successfully");
     }
 
+
     [HttpPost("login")]
     public IActionResult Login([FromBody] Login login)
     {
-        var user = _userRepo.GetLogin(login.User);
-        if (user == null || !VerifyPassword(login.Pass, user.Pass))
+        var storedLogin = _userRepo.GetLogin(login.User);
+        if (storedLogin == null || !VerifyPassword(login.Pass, storedLogin.Pass))
             return Unauthorized("Invalid credentials");
 
         var token = GenerateToken();
         var expiry = DateTime.UtcNow.AddHours(1);
 
-        var userEntity = _userRepo.GetUserByUsername(login.User);
-        if (userEntity == null)
-            return BadRequest("User not found in Users table.");
-
-        //_userRepo.SaveToken(userEntity.Id, token, expiry);
+        // Optional: Save token if needed
+        //_userRepo.SaveToken(storedLogin.Id, token, expiry);
 
         return Ok(new
-        {   
-            Id= userEntity.Id,
+        {
+            Id = storedLogin.Id,
             token = token,
             expiry = expiry,
-            role = user.Role,
-            user = user.User
+            role = storedLogin.Role,
+            user = storedLogin.User
         });
     }
+
 
     [HttpPost("logout")]
     public IActionResult Logout([FromBody] string token)

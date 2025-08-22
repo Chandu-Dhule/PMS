@@ -64,18 +64,28 @@
   display: inline-block;
 }
 */
- 
-.dashboard-top {
+ .prof1{
   display: flex;
-  flex-direction: column;
+  gap: 5px;
+  margin-bottom : 10px;
+ }
+
+ .dashboard-top {
+  display: flex;
+  /* flex-direction: column; */
   align-items: center;
-  margin-bottom: 12px;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black; /* Adds a black bottom line */
+  padding-bottom: 10px; /* Optional: adds spacing between content and the border */
 }
 
+
 .profile-pic {
-  font-size: 60px;
+  font-size: 30px;
   color: #333;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .employee-name {
@@ -110,6 +120,56 @@
 .dashboard-links a:hover {
   background-color: #727376;
 }
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.logout-container a:first-child {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.info-icon-small {
+  font-size: 16px;
+  color: white;
+  background-color: #0072ff;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.info-icon-small:hover {
+  background-color: #005bb5;
+}
+
+
+/* ------------------------------------------ */
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.employee-name {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.employee-personal-info {
+  font-size: 14px;
+  color: #777;
+  margin-top: 4px;
+}
+
+
 
 /* .navigation-section a:hover {
   text-decoration: underline;

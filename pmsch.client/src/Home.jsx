@@ -1,7 +1,15 @@
 import React from 'react';
 import './styles/Home.css';
 
-const Home = ({ totalMachines, maintenanceLogs, goodMachines, badMachines }) => {
+    
+    
+const totalMachines = 10;
+  const maintenanceLogs = 25;
+  const goodMachines = 7;
+  const badMachines = 3;
+
+// const Home = ({ totalMachines, maintenanceLogs, goodMachines, badMachines }) => {
+  const Home = () => {
   return (
     
     <div className="home-wrapper">

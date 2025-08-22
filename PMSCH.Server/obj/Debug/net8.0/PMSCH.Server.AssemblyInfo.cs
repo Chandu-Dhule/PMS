@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PMSCH.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58755003acfd8485e26bd3718db30dd2a38db0e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87a490a49b83da8adb682d045ba598f1c8a72f12")]
 [assembly: System.Reflection.AssemblyProductAttribute("PMSCH.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PMSCH.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

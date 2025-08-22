@@ -21,10 +21,10 @@ namespace PMSCH.Server.Repositories
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-            SELECT m.MachineID, m.Name, m.CategoryID, m.TypeID, m.InstallationDate, m.Status,
-                   hm.Temperature
-            FROM Machines m
-            LEFT JOIN HealthMetrics hm ON m.MachineID = hm.MachineID";
+        SELECT m.MachineID, m.Name, m.CategoryID, m.TypeID, m.InstallationDate, m.Status,
+               m.LifeCycle, hm.Temperature
+        FROM Machines m
+        LEFT JOIN HealthMetrics hm ON m.MachineID = hm.MachineID";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
@@ -39,13 +39,14 @@ namespace PMSCH.Server.Repositories
                         TypeID = Convert.ToInt32(reader["TypeID"]),
                         InstallationDate = Convert.ToDateTime(reader["InstallationDate"]),
                         Status = reader["Status"].ToString(),
+                        LifeCycle = reader["LifeCycle"] != DBNull.Value ? Convert.ToInt32(reader["LifeCycle"]) : 0,
                         Temperature = reader["Temperature"] != DBNull.Value ? Convert.ToSingle(reader["Temperature"]) : (float?)null
-
                     });
                 }
             }
             return machines;
         }
+
         public List<Machine> GetMachinesByTechnician(int technicianId)
         {
             var machines = new List<Machine>();
@@ -53,7 +54,7 @@ namespace PMSCH.Server.Repositories
             {
                 string query = @"
         SELECT m.MachineID, m.Name, m.CategoryID, m.TypeID, m.InstallationDate, m.Status,
-               hm.Temperature
+               m.LifeCycle, hm.Temperature
         FROM Machines m
         LEFT JOIN HealthMetrics hm ON m.MachineID = hm.MachineID
         INNER JOIN TechnicianMachineAssignments tma ON m.MachineID = tma.MachineId
@@ -74,12 +75,14 @@ namespace PMSCH.Server.Repositories
                         TypeID = Convert.ToInt32(reader["TypeID"]),
                         InstallationDate = Convert.ToDateTime(reader["InstallationDate"]),
                         Status = reader["Status"].ToString(),
+                        LifeCycle = reader["LifeCycle"] != DBNull.Value ? Convert.ToInt32(reader["LifeCycle"]) : 0,
                         Temperature = reader["Temperature"] != DBNull.Value ? Convert.ToSingle(reader["Temperature"]) : (float?)null
                     });
                 }
             }
             return machines;
         }
+
 
         public List<Machine> GetMachinesByManager(int managerId)
         {
@@ -88,7 +91,7 @@ namespace PMSCH.Server.Repositories
             {
                 string query = @"
         SELECT m.MachineID, m.Name, m.CategoryID, m.TypeID, m.InstallationDate, m.Status,
-               hm.Temperature
+               m.LifeCycle, hm.Temperature
         FROM Machines m
         LEFT JOIN HealthMetrics hm ON m.MachineID = hm.MachineID
         INNER JOIN Logins u ON m.CategoryID = u.CategoryID
@@ -109,6 +112,7 @@ namespace PMSCH.Server.Repositories
                         TypeID = Convert.ToInt32(reader["TypeID"]),
                         InstallationDate = Convert.ToDateTime(reader["InstallationDate"]),
                         Status = reader["Status"].ToString(),
+                        LifeCycle = reader["LifeCycle"] != DBNull.Value ? Convert.ToInt32(reader["LifeCycle"]):0,
                         Temperature = reader["Temperature"] != DBNull.Value ? Convert.ToSingle(reader["Temperature"]) : (float?)null
                     });
                 }
@@ -117,11 +121,22 @@ namespace PMSCH.Server.Repositories
         }
 
 
+
         public Machine? GetById(int id)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Machines WHERE MachineID = @MachineID";
+                string query = @"
+            SELECT m.*, hm.Temperature, hm.EnergyConsumption, hm.HealthStatus
+            FROM Machines m
+            OUTER APPLY (
+                SELECT TOP 1 Temperature, EnergyConsumption, HealthStatus
+                FROM HealthMetrics
+                WHERE MachineID = m.MachineID
+                ORDER BY CheckDate DESC
+            ) hm
+            WHERE m.MachineID = @MachineID";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MachineID", id);
 
@@ -137,7 +152,10 @@ namespace PMSCH.Server.Repositories
                         CategoryID = Convert.ToInt32(reader["CategoryID"]),
                         TypeID = Convert.ToInt32(reader["TypeID"]),
                         InstallationDate = Convert.ToDateTime(reader["InstallationDate"]),
-                        Status = reader["Status"].ToString()
+                        Status = reader["Status"].ToString(),
+                        Temperature = reader["Temperature"] != DBNull.Value ? Convert.ToInt32(reader["Temperature"]) : null,
+                        EnergyConsumption = reader["EnergyConsumption"] != DBNull.Value ? Convert.ToInt32(reader["EnergyConsumption"]) : null,
+                        HealthStatus = reader["HealthStatus"]?.ToString()
                     };
                 }
 
@@ -147,104 +165,185 @@ namespace PMSCH.Server.Repositories
             return null;
         }
 
-        public void Add(Machine machine)
+
+        public bool Add(Machine machine)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"INSERT INTO Machines 
-                                (MachineID, Name, CategoryID, TypeID, InstallationDate, Status) 
-                                VALUES 
-                                (@MachineID, @Name, @CategoryID, @TypeID, @InstallationDate, @Status)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MachineId", machine.MachineID);
-                cmd.Parameters.AddWithValue("@Name", machine.Name);
-                cmd.Parameters.AddWithValue("@CategoryID", machine.CategoryID);
-                cmd.Parameters.AddWithValue("@TypeID", machine.TypeID);
-                cmd.Parameters.AddWithValue("@InstallationDate", machine.InstallationDate);
-                cmd.Parameters.AddWithValue("@Status", machine.Status);
                 conn.Open();
-                cmd.ExecuteNonQuery();
+
+                // Check if machine already exists
+                string checkQuery = "SELECT COUNT(*) FROM Machines WHERE MachineID = @MachineID";
+                SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                checkCmd.Parameters.AddWithValue("@MachineID", machine.MachineID);
+
+                int count = (int)checkCmd.ExecuteScalar();
+                if (count > 0)
+                {
+                    // Machine already exists, skip insertion
+                    return false;
+                }
+
+                // Insert machine
+                string insertMachineQuery = @"INSERT INTO Machines 
+            (MachineID, Name, CategoryID, TypeID, InstallationDate, Status) 
+            VALUES 
+            (@MachineID, @Name, @CategoryID, @TypeID, @InstallationDate, @Status)";
+                SqlCommand insertCmd = new SqlCommand(insertMachineQuery, conn);
+                insertCmd.Parameters.AddWithValue("@MachineID", machine.MachineID);
+                insertCmd.Parameters.AddWithValue("@Name", machine.Name);
+                insertCmd.Parameters.AddWithValue("@CategoryID", machine.CategoryID);
+                insertCmd.Parameters.AddWithValue("@TypeID", machine.TypeID);
+                insertCmd.Parameters.AddWithValue("@InstallationDate", machine.InstallationDate);
+                insertCmd.Parameters.AddWithValue("@Status", machine.Status);
+                insertCmd.ExecuteNonQuery();
+
+                // Insert health metric
+                string getMaxIdQuery = "SELECT ISNULL(MAX(MetricID), 0) + 1 FROM HealthMetrics";
+                SqlCommand getIdCmd = new SqlCommand(getMaxIdQuery, conn);
+                int newMetricId = (int)getIdCmd.ExecuteScalar();
+
+                string insertMetricQuery = @"INSERT INTO HealthMetrics 
+            (MetricID, MachineID, CheckDate, Temperature, EnergyConsumption, HealthStatus) 
+            VALUES 
+            (@MetricID, @MachineID, @CheckDate, @Temperature, @EnergyConsumption, @HealthStatus)";
+                SqlCommand metricCmd = new SqlCommand(insertMetricQuery, conn);
+                metricCmd.Parameters.AddWithValue("@MetricID", newMetricId);
+                metricCmd.Parameters.AddWithValue("@MachineID", machine.MachineID);
+                metricCmd.Parameters.AddWithValue("@CheckDate", DateTime.Now);
+                metricCmd.Parameters.AddWithValue("@Temperature", machine.Temperature ?? 0);
+                metricCmd.Parameters.AddWithValue("@EnergyConsumption", machine.EnergyConsumption);
+                metricCmd.Parameters.AddWithValue("@HealthStatus", machine.HealthStatus);
+                metricCmd.ExecuteNonQuery();
+
+                return true;
             }
         }
+
+
 
         public void Update(int id, Machine machine)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"UPDATE Machines SET 
-                                Name = @Name, 
-                                CategoryID = @CategoryID, 
-                                TypeID = @TypeID, 
-                                InstallationDate = @InstallationDate, 
-                                Status = @Status 
-                                WHERE MachineID = @MachineID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MachineID", id);
-                cmd.Parameters.AddWithValue("@Name", machine.Name);
-                cmd.Parameters.AddWithValue("@CategoryID", machine.CategoryID);
-                cmd.Parameters.AddWithValue("@TypeID", machine.TypeID);
-                cmd.Parameters.AddWithValue("@InstallationDate", machine.InstallationDate);
-                cmd.Parameters.AddWithValue("@Status", machine.Status);
                 conn.Open();
-                cmd.ExecuteNonQuery();
+
+                // Update machine details
+                string updateMachineQuery = @"UPDATE Machines SET 
+                                      Name = @Name, 
+                                      CategoryID = @CategoryID, 
+                                      TypeID = @TypeID, 
+                                      InstallationDate = @InstallationDate, 
+                                      Status = @Status 
+                                      WHERE MachineID = @MachineID";
+                SqlCommand machineCmd = new SqlCommand(updateMachineQuery, conn);
+                machineCmd.Parameters.AddWithValue("@MachineID", id);
+                machineCmd.Parameters.AddWithValue("@Name", machine.Name);
+                machineCmd.Parameters.AddWithValue("@CategoryID", machine.CategoryID);
+                machineCmd.Parameters.AddWithValue("@TypeID", machine.TypeID);
+                machineCmd.Parameters.AddWithValue("@InstallationDate", machine.InstallationDate);
+                machineCmd.Parameters.AddWithValue("@Status", machine.Status);
+                machineCmd.ExecuteNonQuery();
+
+                // Update latest health metric for this machine
+                string updateMetricQuery = @"UPDATE HealthMetrics SET
+    Temperature = @Temperature, 
+    EnergyConsumption = @EnergyConsumption, 
+    CheckDate = @CheckDate, 
+    HealthStatus = @HealthStatus
+    WHERE MachineID = @MachineID AND MetricID = (
+        SELECT TOP 1 MetricID 
+        FROM HealthMetrics 
+        WHERE MachineID = @MachineID 
+        ORDER BY CheckDate DESC
+    )";
+
+                SqlCommand metricCmd = new SqlCommand(updateMetricQuery, conn);
+                metricCmd.Parameters.AddWithValue("@MachineID", id);
+                metricCmd.Parameters.AddWithValue("@Temperature", machine.Temperature ?? (object)DBNull.Value);
+                metricCmd.Parameters.AddWithValue("@EnergyConsumption", machine.EnergyConsumption ?? (object)DBNull.Value);
+                metricCmd.Parameters.AddWithValue("@CheckDate", DateTime.Now);
+                metricCmd.Parameters.AddWithValue("@HealthStatus", machine.HealthStatus ?? (object)DBNull.Value);
+
+                metricCmd.ExecuteNonQuery();
             }
-        }
+
+            }
+
 
         //public void Delete(int id)
         //{
         //    using (SqlConnection conn = new SqlConnection(_connectionString))
         //    {
 
-        //        string query = "DELETE FROM Machines WHERE MachineID = @MachineID";
-        //        SqlCommand cmd = new SqlCommand(query, conn);
-        //        cmd.Parameters.AddWithValue("@MachineID", id);
-        //        conn.Open();
-        //        cmd.ExecuteNonQuery();
-        //    }
-        //}
+            //        string query = "DELETE FROM Machines WHERE MachineID = @MachineID";
+            //        SqlCommand cmd = new SqlCommand(query, conn);
+            //        cmd.Parameters.AddWithValue("@MachineID", id);
+            //        conn.Open();
+            //        cmd.ExecuteNonQuery();
+            //    }
+            //}
 
-        //public void Delete(int id)
-        //{
-        //    using (SqlConnection conn = new SqlConnection(_connectionString))
-        //    {
-        //        conn.Open();
+            //public void Delete(int id)
+            //{
+            //    using (SqlConnection conn = new SqlConnection(_connectionString))
+            //    {
+            //        conn.Open();
 
-        //        // Check if the machine exists
-        //        string checkQuery = "SELECT COUNT(*) FROM Machines WHERE MachineID = @MachineID";
-        //        SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
-        //        checkCmd.Parameters.AddWithValue("@MachineID", id);
+            //        // Check if the machine exists
+            //        string checkQuery = "SELECT COUNT(*) FROM Machines WHERE MachineID = @MachineID";
+            //        SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+            //        checkCmd.Parameters.AddWithValue("@MachineID", id);
 
-        //        int count = (int)checkCmd.ExecuteScalar();
+            //        int count = (int)checkCmd.ExecuteScalar();
 
-        //        if (count == 0)
-        //        {
-        //            // Machine does not exist
-        //            throw new Exception("Machine not found. Cannot delete.");
-        //        }
+            //        if (count == 0)
+            //        {
+            //            // Machine does not exist
+            //            throw new Exception("Machine not found. Cannot delete.");
+            //        }
 
-        //        // Proceed with deletion
-        //        string deleteQuery = "DELETE FROM Machines WHERE MachineID = @MachineID";
-        //        SqlCommand deleteCmd = new SqlCommand(deleteQuery, conn);
-        //        deleteCmd.Parameters.AddWithValue("@MachineID", id);
-        //        deleteCmd.ExecuteNonQuery();
-        //    }
-        //}
-        public void Delete(int id)
+            //        // Proceed with deletion
+            //        string deleteQuery = "DELETE FROM Machines WHERE MachineID = @MachineID";
+            //        SqlCommand deleteCmd = new SqlCommand(deleteQuery, conn);
+            //        deleteCmd.Parameters.AddWithValue("@MachineID", id);
+            //        deleteCmd.ExecuteNonQuery();
+            //    }
+            //}
+        public bool Delete(int id)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"
+                conn.Open();
+
+                // Check if the machine exists
+                string checkQuery = "SELECT COUNT(*) FROM Machines WHERE MachineID = @MachineID";
+                using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("@MachineID", id);
+                    int count = (int)checkCmd.ExecuteScalar();
+
+                    if (count == 0)
+                    {
+                        // Machine does not exist
+                        return false;
+                    }
+                }
+
+                // Proceed with deletion
+                string deleteQuery = @"
             DELETE FROM TechnicianMachineAssignments WHERE MachineId = @MachineID;
             DELETE FROM MaintenanceLogs WHERE MachineID = @MachineID;
             DELETE FROM HealthMetrics WHERE MachineID = @MachineID;
             DELETE FROM Machines WHERE MachineID = @MachineID;";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand deleteCmd = new SqlCommand(deleteQuery, conn))
                 {
-                    cmd.Parameters.AddWithValue("@MachineID", id);
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
+                    deleteCmd.Parameters.AddWithValue("@MachineID", id);
+                    deleteCmd.ExecuteNonQuery();
                 }
+
+                return true;
             }
         }
 

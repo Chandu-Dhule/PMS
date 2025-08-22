@@ -33,16 +33,35 @@ namespace PMSCH.Server.Repositories
             return machineIds;
         }
 
-        public void AssignMachine(int userId, int machineId)
+        public string AssignTechnician(TechnicianMachineAssignment assignment)
         {
-            using (var conn = new SqlConnection(_connectionString))
+            using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SqlCommand("INSERT INTO TechnicianMachineAssignments (UserId, MachineId) VALUES (@UserId, @MachineId)", conn);
-                cmd.Parameters.AddWithValue("@UserId", userId);
-                cmd.Parameters.AddWithValue("@MachineId", machineId);
-                cmd.ExecuteNonQuery();
-            }
+
+                // Check if machine is already assigned
+                string checkQuery = @"SELECT COUNT(*) FROM TechnicianMachineAssignments 
+                                      WHERE MachineId = @MachineId";
+                SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                checkCmd.Parameters.AddWithValue("@MachineId", assignment.MachineId);
+
+                int count = (int)checkCmd.ExecuteScalar();
+                if (count > 0)
+                {
+                    return "Machine already assigned";
+                }
+
+                // Assign technician
+                string insertQuery = @"INSERT INTO TechnicianMachineAssignments 
+                                       (UserId, MachineId) 
+                                       VALUES (@UserId, @MachineId)";
+                SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
+                insertCmd.Parameters.AddWithValue("@UserId", assignment.UserId);
+                insertCmd.Parameters.AddWithValue("@MachineId", assignment.MachineId);
+                insertCmd.ExecuteNonQuery();
+
+                return "Technician assigned successfully";
+            } // ✅ This closing brace was missing
         }
 
         public void RemoveAssignment(int userId, int machineId)
@@ -70,8 +89,8 @@ namespace PMSCH.Server.Repositories
                         mc.CategoryName,
                         mt.TypeName,
                         m.InstallationDate,
-                        m.Status
-                       
+                        m.Status,
+                        m.LifeCycle
                     FROM TechnicianMachineAssignments tma
                     JOIN Machines m ON tma.MachineId = m.MachineID
                     JOIN MachineCategories mc ON m.CategoryID = mc.CategoryID

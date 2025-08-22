@@ -1,0 +1,52 @@
+.main1-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 1rem;
+  background-color: #f8f9fc; /* Match background with other pages */
+  /* min-height: 100vh; */
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.main1-content h2 {
+  width: 100%;
+  /* height: 50px; */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50; /* Match heading color */
+  /* margin-bottom: 20px; */
+  letter-spacing: 1px;
+  border-bottom: 3px solid #2c3034; /* Match underline style */
+  /* padding-bottom: 0.5rem; */
+  /* margin-bottom: 250px; */
+}
+
+/* Metric Cards - Two Column Layout */
+.metric-card {
+  flex: 0 1 calc(50% - 20px);
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #4c4e50; /* Match table header color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+  /* margin-bottom: 500px; */
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #1f2d3d;
+}
+
+.metric-card strong {
+  color: #2c3e50;
+}

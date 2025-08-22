@@ -20,7 +20,7 @@ namespace PMSCH.Server.Repositories {
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM HealthMetrics ORDER BY CheckDate DESC";
+                string query = "SELECT * FROM HealthMetrics ";
                 SqlCommand cmd = new SqlCommand(query, conn);
 
                 conn.Open();
@@ -52,7 +52,7 @@ namespace PMSCH.Server.Repositories {
 
                 using (SqlConnection conn = new SqlConnection(_connectionString))
                 {
-                    string query = "SELECT * FROM HealthMetrics WHERE MachineID = @MachineID ORDER BY CheckDate DESC";
+                    string query = "SELECT * FROM HealthMetrics WHERE MachineID = @MachineID ";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@MachineID", machineId);
 
@@ -103,15 +103,16 @@ namespace PMSCH.Server.Repositories {
             }
 
         //  Get machines with critical health metrics (example: Temperature > threshold)
-        public List<HealthMetric> GetCriticalMachines(float temperatureThreshold = 80.0f)
+        public List<HealthMetric> GetCriticalMachines(float temperatureThreshold = 80.0f, float TEnergy=100.0f)
         {
             var machineDetails = new List<HealthMetric>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM HealthMetrics WHERE Temperature > @Threshold";
+                string query = "SELECT * FROM HealthMetrics WHERE Temperature > @Threshold or EnergyConsumption > @TEnergy";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
+                cmd.Parameters.AddWithValue("@TEnergy", TEnergy);
 
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -132,20 +133,22 @@ namespace PMSCH.Server.Repositories {
 
             return machineDetails;
         }
-        public List<HealthMetric> GetCriticalMachinesByTechnician(int technicianId, float temperatureThreshold = 80.0f)
+        public List<HealthMetric> GetCriticalMachinesByTechnician(int technicianId, float temperatureThreshold = 80.0f, float TEnergy = 100.0f)
         {
             var machineDetails = new List<HealthMetric>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-        SELECT hm.* FROM HealthMetrics hm
-        INNER JOIN TechnicianMachineAssignments tma ON hm.MachineID = tma.MachineId
-        WHERE tma.UserId = @TechnicianId AND hm.Temperature > @Threshold";
+SELECT hm.* FROM HealthMetrics hm
+INNER JOIN TechnicianMachineAssignments tma ON hm.MachineID = tma.MachineId
+WHERE tma.UserId = @TechnicianId AND (hm.Temperature > @Threshold OR hm.EnergyConsumption > @TEnergy)";
+
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TechnicianId", technicianId);
                 cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
+                cmd.Parameters.AddWithValue("@TEnergy", TEnergy);
 
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -166,21 +169,23 @@ namespace PMSCH.Server.Repositories {
 
             return machineDetails;
         }
-        public List<HealthMetric> GetCriticalMachinesByManager(int managerId, float temperatureThreshold = 80.0f)
+        public List<HealthMetric> GetCriticalMachinesByManager(int managerId, float temperatureThreshold = 80.0f, float TEnergy = 100.0f)
         {
             var machineDetails = new List<HealthMetric>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-        SELECT hm.* FROM HealthMetrics hm
-        INNER JOIN Machines m ON hm.MachineID = m.MachineID
-        INNER JOIN Logins u ON m.CategoryID = u.CategoryID
-        WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND hm.Temperature > @Threshold";
+SELECT hm.* FROM HealthMetrics hm
+INNER JOIN Machines m ON hm.MachineID = m.MachineID
+INNER JOIN Logins u ON m.CategoryID = u.CategoryID
+WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND (hm.Temperature > @Threshold OR hm.EnergyConsumption > @TEnergy)";
+
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@ManagerId", managerId);
                 cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
+                cmd.Parameters.AddWithValue("@TEnergy", TEnergy);
 
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -213,7 +218,7 @@ namespace PMSCH.Server.Repositories {
             SELECT hm.* FROM HealthMetrics hm
             INNER JOIN TechnicianMachineAssignments tma ON hm.MachineID = tma.MachineId
             WHERE tma.UserId = @TechnicianId
-            ORDER BY hm.CheckDate DESC";
+            ORDER BY hm.CheckDate ";
 
                 var cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TechnicianId", technicianId);
@@ -248,7 +253,7 @@ namespace PMSCH.Server.Repositories {
             INNER JOIN Machines m ON hm.MachineID = m.MachineID
             INNER JOIN Logins u ON m.CategoryID = u.CategoryID
             WHERE u.Id = @ManagerId AND u.Role = 'Manager'
-            ORDER BY hm.CheckDate DESC";
+            ORDER BY hm.CheckDate ";
 
                 var cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@ManagerId", managerId);
