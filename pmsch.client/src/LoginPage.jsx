@@ -264,7 +264,7 @@ if (matchedUser.role === 'Admin') {
                 <li>3. All activities are monitored for security and compliance.</li>
                 <li>4. Data entered must be accurate and truthful.</li>
                 <li>5. Users are responsible for actions taken under their account.</li>
-                <li>6. iolation may result in suspension or termination of access.</li>
+                <li>6. Violation may result in suspension or termination of access.</li>
               </ul>
               <button onClick={() => setShowTerms(false)}>Close</button>
             </div>

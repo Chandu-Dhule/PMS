@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MySql.Data.MySqlClient;
 
 public class UserRepository : IUserRepository
 {
@@ -19,10 +20,10 @@ public class UserRepository : IUserRepository
 
     public User GetUserByUsername(string username)
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("SELECT * FROM Logins WHERE [User] = @Username", connection);
+        var command = new MySqlCommand("SELECT * FROM Logins WHERE User = @Username", connection);
         command.Parameters.AddWithValue("@Username", username);
 
         using var reader = command.ExecuteReader();
@@ -36,11 +37,11 @@ public class UserRepository : IUserRepository
 
     public void AddUser(User user)
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
         // Insert user into Logins table
-        var insertCommand = new SqlCommand(@"
+        var insertCommand = new MySqlCommand(@"
         INSERT INTO Logins (Username, PasswordHash, Role, CategoryID)
         VALUES (@Username, @PasswordHash, @Role, @CategoryID);
         SELECT SCOPE_IDENTITY();", connection); // Returns newly inserted ID
@@ -59,7 +60,7 @@ public class UserRepository : IUserRepository
             foreach (var machineId in user.AssignedMachineIds)
             {
                 // Check if machine is already assigned
-                var checkCommand = new SqlCommand(@"
+                var checkCommand = new MySqlCommand(@"
                 SELECT COUNT(*) FROM TechnicianMachineAssignments 
                 WHERE MachineId = @MachineId", connection);
                 checkCommand.Parameters.AddWithValue("@MachineId", machineId);
@@ -68,7 +69,7 @@ public class UserRepository : IUserRepository
                 if (count == 0)
                 {
                     // Assign technician to machine
-                    var assignCommand = new SqlCommand(@"
+                    var assignCommand = new MySqlCommand(@"
                     INSERT INTO TechnicianMachineAssignments (UserId, MachineId)
                     VALUES (@UserId, @MachineId)", connection);
                     assignCommand.Parameters.AddWithValue("@UserId", newUserId);
@@ -85,10 +86,10 @@ public class UserRepository : IUserRepository
     {
         var users = new List<User>();
 
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("SELECT * FROM Logins", connection);
+        var command = new MySqlCommand("SELECT * FROM Logins", connection);
         using var reader = command.ExecuteReader();
 
         while (reader.Read())
@@ -117,10 +118,10 @@ public class UserRepository : IUserRepository
 
     public bool ValidateToken(string token)
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("SELECT Expiry FROM Tokens WHERE Token = @Token", connection);
+        var command = new MySqlCommand("SELECT Expiry FROM Tokens WHERE Token = @Token", connection);
         command.Parameters.AddWithValue("@Token", token);
 
         using var reader = command.ExecuteReader();
@@ -135,10 +136,10 @@ public class UserRepository : IUserRepository
 
     public User GetUserByToken(string token)
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand(@"
+        var command = new MySqlCommand(@"
             SELECT u.Id, u.Username, u.PasswordHash, u.Role, u.CategoryID
             FROM Logins u
             INNER JOIN Tokens t ON u.Id = t.UserId
@@ -157,10 +158,10 @@ public class UserRepository : IUserRepository
 
     public void DeleteToken(string token)
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("DELETE FROM Tokens WHERE Token = @Token", connection);
+        var command = new MySqlCommand("DELETE FROM Tokens WHERE Token = @Token", connection);
         command.Parameters.AddWithValue("@Token", token);
 
         command.ExecuteNonQuery();
@@ -168,14 +169,14 @@ public class UserRepository : IUserRepository
 
     public void CleanupExpiredTokens()
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("DELETE FROM Tokens WHERE Expiry < GETUTCDATE()", connection);
+        var command = new MySqlCommand("DELETE FROM Tokens WHERE Expiry < GETUTCDATE()", connection);
         command.ExecuteNonQuery();
     }
 
-    private User MapUser(SqlDataReader reader)
+    private User MapUser(MySqlDataReader reader)
     {
         var user = new User
         {
@@ -197,10 +198,10 @@ public class UserRepository : IUserRepository
     //-------------------------------------
     public Login GetLogin(string user)
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand("SELECT * FROM Logins WHERE [User] = @User", connection);
+        var command = new MySqlCommand("SELECT * FROM Logins WHERE User = @User", connection);
         command.Parameters.AddWithValue("@User", user);
 
         using var reader = command.ExecuteReader();
@@ -222,11 +223,11 @@ public class UserRepository : IUserRepository
 
     public void CreateLogin(Login login)
     {
-        using var connection = new SqlConnection(_connectionString);
+        using var connection = new MySqlConnection(_connectionString);
         connection.Open();
 
-        var command = new SqlCommand(@"
-        INSERT INTO Logins (ID, [User], [Pass], [Role], [CategoryID]) 
+        var command = new MySqlCommand(@"
+        INSERT INTO Logins (ID, User, Pass, Role, CategoryID) 
         VALUES (@Id, @User, @Pass, @Role, @CategoryID)", connection);
 
         command.Parameters.AddWithValue("@Id", login.Id);
@@ -248,12 +249,12 @@ public class UserRepository : IUserRepository
     public List<Login> GetAll()
     {
         var login = new List<Login>();
-        using (SqlConnection conn = new SqlConnection(_connectionString))
+        using (MySqlConnection conn = new MySqlConnection(_connectionString))
         {
             string query = "SELECT * FROM Logins";
-            SqlCommand cmd = new SqlCommand(query, conn);
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             conn.Open();
-            SqlDataReader reader = cmd.ExecuteReader();
+            MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
                 login.Add(new Login

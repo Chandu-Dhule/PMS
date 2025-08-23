@@ -2,7 +2,8 @@
 using PMSCH.Server.Models;
 using System;
 using System.Collections.Generic;
-using Microsoft.Data.SqlClient;
+
+using MySql.Data.MySqlClient;
 namespace PMSCH.Server.Repositories { 
 
         public class HealthMetricRepository
@@ -18,13 +19,13 @@ namespace PMSCH.Server.Repositories {
         {
             var metrics = new List<HealthMetric>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "SELECT * FROM HealthMetrics ";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -50,14 +51,14 @@ namespace PMSCH.Server.Repositories {
             {
                 var metrics = new List<HealthMetric>();
 
-                using (SqlConnection conn = new SqlConnection(_connectionString))
+                using (MySqlConnection conn = new MySqlConnection(_connectionString))
                 {
                     string query = "SELECT * FROM HealthMetrics WHERE MachineID = @MachineID ";
-                    SqlCommand cmd = new SqlCommand(query, conn);
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@MachineID", machineId);
 
                     conn.Open();
-                    SqlDataReader reader = cmd.ExecuteReader();
+                    MySqlDataReader reader = cmd.ExecuteReader();
 
                     while (reader.Read())
                     {
@@ -82,13 +83,13 @@ namespace PMSCH.Server.Repositories {
             //  Add a new health metric
             public void Add(HealthMetric metric)
             {
-                using (SqlConnection conn = new SqlConnection(_connectionString))
+                using (MySqlConnection conn = new MySqlConnection(_connectionString))
                 {
                     string query = @"INSERT INTO HealthMetrics 
                                 (MetricID,MachineID, CheckDate, Temperature, EnergyConsumption, HealthStatus) 
                                 VALUES 
                                 (@MetricID,@MachineID, @CheckDate, @Temperature, @EnergyConsumption, @HealthStatus)";
-                    SqlCommand cmd = new SqlCommand(query, conn);
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@MetricID", metric.MetricID);
                     cmd.Parameters.AddWithValue("@MachineID", metric.MachineID);
                     cmd.Parameters.AddWithValue("@CheckDate", metric.CheckDate);
@@ -107,15 +108,15 @@ namespace PMSCH.Server.Repositories {
         {
             var machineDetails = new List<HealthMetric>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "SELECT * FROM HealthMetrics WHERE Temperature > @Threshold or EnergyConsumption > @TEnergy";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
                 cmd.Parameters.AddWithValue("@TEnergy", TEnergy);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -137,7 +138,7 @@ namespace PMSCH.Server.Repositories {
         {
             var machineDetails = new List<HealthMetric>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = @"
 SELECT hm.* FROM HealthMetrics hm
@@ -145,13 +146,13 @@ INNER JOIN TechnicianMachineAssignments tma ON hm.MachineID = tma.MachineId
 WHERE tma.UserId = @TechnicianId AND (hm.Temperature > @Threshold OR hm.EnergyConsumption > @TEnergy)";
 
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TechnicianId", technicianId);
                 cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
                 cmd.Parameters.AddWithValue("@TEnergy", TEnergy);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -173,7 +174,7 @@ WHERE tma.UserId = @TechnicianId AND (hm.Temperature > @Threshold OR hm.EnergyCo
         {
             var machineDetails = new List<HealthMetric>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = @"
 SELECT hm.* FROM HealthMetrics hm
@@ -182,13 +183,13 @@ INNER JOIN Logins u ON m.CategoryID = u.CategoryID
 WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND (hm.Temperature > @Threshold OR hm.EnergyConsumption > @TEnergy)";
 
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@ManagerId", managerId);
                 cmd.Parameters.AddWithValue("@Threshold", temperatureThreshold);
                 cmd.Parameters.AddWithValue("@TEnergy", TEnergy);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -212,7 +213,7 @@ WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND (hm.Temperature > @Threshold 
         {
             var metrics = new List<HealthMetric>();
 
-            using (var conn = new SqlConnection(_connectionString))
+            using (var conn = new MySqlConnection(_connectionString))
             {
                 string query = @"
             SELECT hm.* FROM HealthMetrics hm
@@ -220,7 +221,7 @@ WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND (hm.Temperature > @Threshold 
             WHERE tma.UserId = @TechnicianId
             ORDER BY hm.CheckDate ";
 
-                var cmd = new SqlCommand(query, conn);
+                var cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TechnicianId", technicianId);
 
                 conn.Open();
@@ -246,7 +247,7 @@ WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND (hm.Temperature > @Threshold 
         {
             var metrics = new List<HealthMetric>();
 
-            using (var conn = new SqlConnection(_connectionString))
+            using (var conn = new MySqlConnection(_connectionString))
             {
                 string query = @"
             SELECT hm.* FROM HealthMetrics hm
@@ -255,7 +256,7 @@ WHERE u.Id = @ManagerId AND u.Role = 'Manager' AND (hm.Temperature > @Threshold 
             WHERE u.Id = @ManagerId AND u.Role = 'Manager'
             ORDER BY hm.CheckDate ";
 
-                var cmd = new SqlCommand(query, conn);
+                var cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@ManagerId", managerId);
 
                 conn.Open();

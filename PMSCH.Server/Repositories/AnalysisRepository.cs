@@ -1,5 +1,5 @@
 ﻿using PMSCH.Server.Models;
-using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace PMSCH.Server.Repositories
 {
@@ -21,7 +21,7 @@ namespace PMSCH.Server.Repositories
                 CategoryDistributionData = new List<CategoryCount>()
             };
 
-            using var conn = new SqlConnection(_connectionString);
+            using var conn = new MySqlConnection(_connectionString);
             conn.Open();
 
             string machineFilterQuery = role switch
@@ -33,7 +33,7 @@ namespace PMSCH.Server.Repositories
             };
 
             // 1. Machine Health Data
-            var healthCmd = new SqlCommand($@"
+            var healthCmd = new MySqlCommand($@"
                 SELECT m.Name, hm.HealthStatus, hm.Temperature
                 FROM HealthMetrics hm
                 INNER JOIN Machines m ON hm.MachineID = m.MachineID
@@ -52,7 +52,7 @@ namespace PMSCH.Server.Repositories
             healthReader.Close();
 
             // 2. Maintenance Status Count
-            var statusCmd = new SqlCommand($@"
+            var statusCmd = new MySqlCommand($@"
                 SELECT hm.HealthStatus, COUNT(*) AS Count
                 FROM HealthMetrics hm
                 INNER JOIN Machines m ON hm.MachineID = m.MachineID
@@ -71,7 +71,7 @@ namespace PMSCH.Server.Repositories
             statusReader.Close();
 
             // 3. Category Distribution
-            var categoryCmd = new SqlCommand($@"
+            var categoryCmd = new MySqlCommand($@"
                 SELECT mc.CategoryName, COUNT(*) AS Count
                 FROM Machines m
                 INNER JOIN MachineCategories mc ON m.CategoryID = mc.CategoryID

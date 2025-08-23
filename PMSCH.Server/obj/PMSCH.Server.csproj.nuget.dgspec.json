@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\PMSCH.Server.csproj": {}
+    "C:\\Users\\2420959\\OneDrive - Cognizant\\Desktop\\Final\\PMSCH.Server\\PMSCH.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\PMSCH.Server.csproj": {
+    "C:\\Users\\2420959\\OneDrive - Cognizant\\Desktop\\Final\\PMSCH.Server\\PMSCH.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\PMSCH.Server.csproj",
+        "projectUniqueName": "C:\\Users\\2420959\\OneDrive - Cognizant\\Desktop\\Final\\PMSCH.Server\\PMSCH.Server.csproj",
         "projectName": "PMSCH.Server",
-        "projectPath": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\PMSCH.Server.csproj",
-        "packagesPath": "C:\\Users\\2421026\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\obj\\",
+        "projectPath": "C:\\Users\\2420959\\OneDrive - Cognizant\\Desktop\\Final\\PMSCH.Server\\PMSCH.Server.csproj",
+        "packagesPath": "C:\\Users\\2420959\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2420959\\OneDrive - Cognizant\\Desktop\\Final\\PMSCH.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\2421026\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2420959\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -63,6 +63,10 @@
               "target": "Package",
               "version": "[8.13.1, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.4.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -87,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

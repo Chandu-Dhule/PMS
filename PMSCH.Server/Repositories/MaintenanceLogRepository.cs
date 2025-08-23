@@ -3,6 +3,7 @@ using PMSCH.Server.Models;
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace PMSCH.Server.Repositories
 {
@@ -20,15 +21,15 @@ namespace PMSCH.Server.Repositories
         {
             var logs = new List<MaintenanceLog>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = @"SELECT LogID, MachineID, MaintenanceDate, Description, OperatorName, NextDueDate 
                                  FROM MaintenanceLogs 
                                  ORDER BY MaintenanceDate";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+               MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -51,7 +52,7 @@ namespace PMSCH.Server.Repositories
         public List<MaintenanceLog> GetLogsByTechnician(int technicianId)
         {
             var logs = new List<MaintenanceLog>();
-            using (var conn = new SqlConnection(_connectionString))
+            using (var conn = new MySqlConnection(_connectionString))
             {
                 string query = @"
             SELECT ml.* FROM MaintenanceLogs ml
@@ -59,7 +60,7 @@ namespace PMSCH.Server.Repositories
             WHERE tma.UserId = @TechnicianId
             ORDER BY ml.MaintenanceDate ASC";
 
-                var cmd = new SqlCommand(query, conn);
+                var cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TechnicianId", technicianId);
 
                 conn.Open();
@@ -82,7 +83,7 @@ namespace PMSCH.Server.Repositories
         public List<MaintenanceLog> GetLogsByManager(int managerId)
         {
             var logs = new List<MaintenanceLog>();
-            using (var conn = new SqlConnection(_connectionString))
+            using (var conn = new MySqlConnection(_connectionString))
             {
                 string query = @"
             SELECT ml.* FROM MaintenanceLogs ml
@@ -91,7 +92,7 @@ namespace PMSCH.Server.Repositories
             WHERE u.Id = @ManagerId AND u.Role = 'Manager'
             ORDER BY ml.MaintenanceDate";
 
-                var cmd = new SqlCommand(query, conn);
+                var cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@ManagerId", managerId);
 
                 conn.Open();
@@ -152,7 +153,7 @@ namespace PMSCH.Server.Repositories
         // ✅ Add a new maintenance log
         public void Add(MaintenanceLog log)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 conn.Open();
 
@@ -161,7 +162,7 @@ namespace PMSCH.Server.Repositories
                                   (LogID,MachineID, MaintenanceDate, Description, OperatorName, NextDueDate) 
                                   VALUES 
                                   (@LogID,@MachineID, @MaintenanceDate, @Description, @OperatorName, @NextDueDate)";
-                SqlCommand logCmd = new SqlCommand(insertLogQuery, conn);
+                MySqlCommand logCmd = new MySqlCommand(insertLogQuery, conn);
                 logCmd.Parameters.AddWithValue("@LogID", log.LogID);
                 logCmd.Parameters.AddWithValue("@MachineID", log.MachineID);
                 logCmd.Parameters.AddWithValue("@MaintenanceDate", log.MaintenanceDate);
@@ -183,7 +184,7 @@ namespace PMSCH.Server.Repositories
                                          WHERE MachineID = @MachineID 
                                          ORDER BY CheckDate DESC
                                      )";
-                SqlCommand metricCmd = new SqlCommand(updateMetricQuery, conn);
+                MySqlCommand metricCmd = new MySqlCommand(updateMetricQuery, conn);
                 metricCmd.Parameters.AddWithValue("@Temperature", log.Temperature);
                 metricCmd.Parameters.AddWithValue("@EnergyConsumption", log.EnergyConsumption);
                 metricCmd.Parameters.AddWithValue("@HealthStatus", log.HealthStatus);
@@ -199,17 +200,17 @@ namespace PMSCH.Server.Repositories
         {
             var dueMachines = new List<int>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = @"SELECT DISTINCT MachineID 
                                  FROM MaintenanceLogs 
                                  WHERE NextDueDate <= @Today";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Today", DateTime.Today);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {

@@ -41,10 +41,7 @@ import Notification from './Notification';
 
 
 function ADash() {
-  const totalMachines = 10;
-  const maintenanceLogs = 25;
-  const goodMachines = 7;
-  const badMachines = 3;
+  
   // const hideSidebar = location.pathname === '/create-account'
   const hideSidebar = location.pathname === '/log-out'|| location.pathname === '/login-page'
   

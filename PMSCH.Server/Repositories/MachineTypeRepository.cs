@@ -3,6 +3,7 @@ using PMSCH.Server.Models;
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace PMSCH.Server.Repositories
 {
@@ -20,13 +21,13 @@ namespace PMSCH.Server.Repositories
         {
             var types = new List<MachineType>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "SELECT TypeID, TypeName, Description FROM MachineTypes";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -47,10 +48,10 @@ namespace PMSCH.Server.Repositories
         // ✅ Add a new machine type
         public void Add(MachineType type)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "INSERT INTO MachineTypes (TypeName, Description) VALUES (@TypeName, @Description)";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TypeName", type.TypeName);
                 cmd.Parameters.AddWithValue("@Description", type.Description);
 
@@ -62,14 +63,14 @@ namespace PMSCH.Server.Repositories
         // ✅ Get machine type by ID
         public MachineType? GetById(int typeId)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "SELECT TypeID, TypeName, Description FROM MachineTypes WHERE TypeID = @TypeID";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TypeID", typeId);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 if (reader.Read())
                 {
@@ -90,10 +91,10 @@ namespace PMSCH.Server.Repositories
         // ✅ Delete machine type by ID
         public void Delete(int typeId)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "DELETE FROM MachineTypes WHERE TypeID = @TypeID";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TypeID", typeId);
 
                 conn.Open();

@@ -3,6 +3,7 @@ using PMSCH.Server.Models;
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace PMSCH.Server.Repositories
 {
@@ -20,13 +21,13 @@ namespace PMSCH.Server.Repositories
         {
             var categories = new List<MachineCategory>();
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "SELECT CategoryID, CategoryName FROM MachineCategories";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -46,10 +47,10 @@ namespace PMSCH.Server.Repositories
         // ✅ Add a new category
         public void Add(MachineCategory category)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "INSERT INTO MachineCategories (CategoryID,CategoryName) VALUES (@CategoryID,@CategoryName)";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@CategoryId", category.CategoryID);
                 cmd.Parameters.AddWithValue("@CategoryName", category.CategoryName);
 
@@ -61,14 +62,14 @@ namespace PMSCH.Server.Repositories
         // ✅ Get category by ID
         public MachineCategory? GetById(int categoryId)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "SELECT CategoryID, CategoryName FROM MachineCategories WHERE CategoryID = @CategoryID";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@CategoryID", categoryId);
 
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 if (reader.Read())
                 {
@@ -88,10 +89,10 @@ namespace PMSCH.Server.Repositories
         // ✅ Delete category by ID
         public void Delete(int categoryId)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 string query = "DELETE FROM MachineCategories WHERE CategoryID = @CategoryID";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@CategoryID", categoryId);
 
                 conn.Open();
