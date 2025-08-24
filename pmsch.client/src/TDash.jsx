@@ -70,11 +70,11 @@ function TDash() {
               />
             }
           />
-          <Route path="/add-machine" element={<AddMachine />} />
-          <Route path="/log-maintenance" element={<LogMaintenance />} />
+          <Route path="add-machine" element={<AddMachine />} />
+          <Route path="log-maintenance" element={<LogMaintenance />} />
           <Route path="/health-metrics" element={<HealthMetrics />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/show-all-details" element={<ShowAllDetails />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route path="/show-all-details" element={<HomeTechnician />} />
           <Route path="/app-info" element={<AppInfo />} />
           <Route path="/edit-machine" element={<EditMachine />} />
           <Route path="/delete-machine" element={<DeleteMachine />} />

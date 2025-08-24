@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e/+w8rOnEqI=",
+  "dgSpecHash": "u+Lz7bZFPOc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\PMSCH.Server.csproj",
+  "projectFilePath": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\backend\\PMSCH.Server\\PMSCH.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2421026\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\2421026\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

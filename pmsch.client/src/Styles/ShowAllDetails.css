@@ -1,52 +1,74 @@
-/* Showalldetaild.css */
 .details-wrapper {
-  padding: 1rem;
-  background-color: #f8f9fc;
-  min-height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
+    padding: 1rem;
+    background-color: #f8f9fc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: auto; /* Enables vertical scrolling */
 }
- 
-.details-wrapper h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  /* text-align: center; */
-  color: #2c3e50;
-  margin-bottom: 20px;
-  /* text-transform: uppercase; */
-  letter-spacing: 1px;
-  border-bottom: 3px solid #2c3034;
-  padding-bottom: 0.5rem;
-}
- 
-.details-table {
-  width: 100%;
-  /* max-width: 1000px; */
-  /* margin: 0 auto; */
 
-  border-collapse: collapse;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  border-radius: 8px;
-  overflow: hidden;
+/* Make the table scrollable horizontally */
+.details-table {
+    width: max-content;
+
+    min-width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: auto;
+    /*display: block;*/ /* Enables horizontal scroll */
 }
+    .details-table td:first-child {
+        position: sticky;
+        left: 0;
+                background-color: #ffffff;  
+        z-index: 2;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    }
+    .details-table th:first-child {
+        position: sticky;
+        left: 0;
+/*        background-color: #ffffff;  */
+        z-index: 3;  
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); /* Optional: subtle shadow */
+    }
+
+
+    /* Sticky header */
+
+    .details-table thead th {
+        position: sticky;
+        top: 0;
+/*        border-radius:2px;*/
+        background-color: #4c4e50;
+        color: white;
+        z-index: 2;
+    }
+/*    .details-table {
+        border-radius:8x;
+    }*/
+        .table-scroll-container {
+            height: 500px;
+            overflow-y: auto;
+        }
+
+
+    /* Table cells */
+    .details-table th,
+    .details-table td {
+        padding: 12px 16px;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+        white-space: nowrap; /* Prevents text wrapping */
+    }
+
+    /* Hover effect */
+    .details-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
  
-.details-table th,
-.details-table td {
-  padding: 12px 16px;
-  text-align: center;
-  border-bottom: 1px solid #e0e0e0;
-}
- 
-.details-table th {
-  background-color: #4c4e50;
-  color: white;
-}
- 
-.details-table tr:hover {
-  background-color: #f1f1f1;
-}
- 
-.status-good {
+/*.status-good {
   color: #388e3c;
   font-weight: bold;
 }
@@ -60,5 +82,5 @@
   color: #c62828;
   font-weight: bold;
 }
- 
+ */
  

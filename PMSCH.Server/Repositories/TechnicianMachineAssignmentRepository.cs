@@ -39,30 +39,42 @@ namespace PMSCH.Server.Repositories
             {
                 conn.Open();
 
-                // Check if machine is already assigned
-                string checkQuery = @"SELECT COUNT(*) FROM TechnicianMachineAssignments 
-                                      WHERE MachineId = @MachineId";
-                SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
-                checkCmd.Parameters.AddWithValue("@MachineId", assignment.MachineId);
+                // ✅ Step 1: Check if the technician exists in Logins and is a Technician
+                string checkTechnicianQuery = @"SELECT COUNT(*) FROM Logins 
+                                        WHERE Id = @UserId AND Role = 'Technician'";
+                SqlCommand checkTechCmd = new SqlCommand(checkTechnicianQuery, conn);
+                checkTechCmd.Parameters.AddWithValue("@UserId", assignment.UserId);
 
-                int count = (int)checkCmd.ExecuteScalar();
-                if (count > 0)
+                int techExists = (int)checkTechCmd.ExecuteScalar();
+                if (techExists == 0)
+                {
+                    return "Technician not available";
+                }
+
+                // ✅ Step 2: Check if the machine is already assigned
+                string checkMachineQuery = @"SELECT COUNT(*) FROM TechnicianMachineAssignments 
+                                     WHERE MachineId = @MachineId";
+                SqlCommand checkMachineCmd = new SqlCommand(checkMachineQuery, conn);
+                checkMachineCmd.Parameters.AddWithValue("@MachineId", assignment.MachineId);
+
+                int machineAssigned = (int)checkMachineCmd.ExecuteScalar();
+                if (machineAssigned > 0)
                 {
                     return "Machine already assigned";
                 }
 
-                // Assign technician
-                string insertQuery = @"INSERT INTO TechnicianMachineAssignments 
-                                       (UserId, MachineId) 
-                                       VALUES (@UserId, @MachineId)";
+                // ✅ Step 3: Assign machine to technician
+                string insertQuery = @"INSERT INTO TechnicianMachineAssignments (UserId, MachineId) 
+                               VALUES (@UserId, @MachineId)";
                 SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
                 insertCmd.Parameters.AddWithValue("@UserId", assignment.UserId);
                 insertCmd.Parameters.AddWithValue("@MachineId", assignment.MachineId);
                 insertCmd.ExecuteNonQuery();
 
                 return "Technician assigned successfully";
-            } // ✅ This closing brace was missing
+            }
         }
+
 
         public void RemoveAssignment(int userId, int machineId)
         {

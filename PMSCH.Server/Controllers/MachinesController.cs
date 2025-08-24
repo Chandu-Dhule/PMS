@@ -94,6 +94,12 @@ namespace PMSCH.Server.Controllers
 
             //if (!IsAdmin())
             //    return Forbid("Admin access required");
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                return BadRequest(string.Join("; ", errors));
+            }
+
 
             bool added = _repository.Add(machine);
 
@@ -102,6 +108,7 @@ namespace PMSCH.Server.Controllers
 
             return CreatedAtAction(nameof(GetById), new { id = machine.MachineID }, machine);
         }
+
 
 
         [HttpPut("{id}")]

@@ -80,11 +80,13 @@ function ShowAllDetails() {
       <h2>All Machine Details</h2>
       {loading ? (
         <p>Loading...</p>
-      ) : (
-        <table className="details-table">
+          ) : (
+                  <div className="table-scroll-container">
+                  <table className="details-table">
+        
           <thead>
-            <tr>
-            <th>Name</th>
+                              <tr>
+                                  <th id="name1">Name</th>
               <th>Machine ID</th>
               {/* <th>Name</th> */}
               <th>Category ID</th>
@@ -93,10 +95,13 @@ function ShowAllDetails() {
               
               <th>Installation Date</th>
               <th>Status</th>
-              <th>Temperature</th>
+             <th>Temperature</th>
+              <th>Energy Consumptions</th>
+              <th>Assigned To</th>
               <th>LifeCycle(Month)</th>
             </tr>
-          </thead>
+                          </thead>
+       
           <tbody>
             {machineData.map((m, idx) => (
               <tr key={idx}>
@@ -109,13 +114,16 @@ function ShowAllDetails() {
                 
                 <td>{new Date(m.installationDate).toLocaleDateString()}</td>
                 <td className={`status-${m.status.toLowerCase()}`}>{m.status}</td>
-                <td>{m.temperature}</td>
+                    <td>{m.temperature}</td>
+                    <td>{m.energyConsumption}</td>
+                    <td>{m.assignedTo}</td>
                 <td>{m.lifeCycle}</td>
                 
               </tr>
             ))}
           </tbody>
-        </table>
+                      </table>
+      </div>
       )}
     </div>
   );

@@ -3,60 +3,144 @@
   "WorkspaceRootPath": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\styles\\analysispage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\styles\\analysispage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\analysispage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\analysispage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\healthmetrics.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\healthmetrics.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\showalldetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\showalldetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\showlogmaintain.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\showlogmaintain.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\createacc.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\createacc.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\styles\\createacc.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\styles\\createacc.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\styles\\showalldetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\styles\\showalldetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\addmachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\addmachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\logmaintenance.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\logmaintenance.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\styles\\showalldetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\styles\\showalldetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\showalldetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\showalldetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\deletemachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\deletemachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\analysispage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\analysispage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\hometechnician.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\hometechnician.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\tdash.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\tdash.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\editmachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\editmachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\maintenancelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\maintenancelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\assigntechnician.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\assigntechnician.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\showlogmaintain.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\showlogmaintain.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\logmaintenance.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\logmaintenance.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\maintenancelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\maintenancelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\styles\\logmaintenance.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\styles\\logmaintenance.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\analysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\analysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\analysisdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\analysisdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\ianalysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\ianalysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\technicianmachineassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\technicianmachineassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\machinecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\machinecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\styles\\createacc.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\styles\\createacc.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\styles\\analysispage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\styles\\analysispage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\healthmetrics.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\healthmetrics.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\createacc.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\createacc.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\mdash.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -65,26 +149,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\adash.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\adash.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\editmachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\editmachine.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\maintenancelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\maintenancelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\maintenancelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\maintenancelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,14 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\technicianmachineassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\technicianmachineassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\technicianmachineassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\technicianmachineassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,24 +179,12 @@
       "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\healthmetricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\maintenancelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\maintenancelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\models\\healthmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\repositories\\healthmetricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\techniciandashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -159,16 +203,8 @@
       "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\hometechnician.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\hometechnician.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.client\\src\\settings.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BE1846C9-9C80-BABE-8D9F-F31021E86D66}|pmsch.client\\pmsch.client.esproj|solutionrelative:pmsch.client\\src\\settings.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|solutionrelative:pmsch.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0375CAA-E2C6-4193-865B-854C73FBD08C}|PMSCH.Server\\PMSCH.Server.csproj|c:\\users\\2421026\\onedrive - cognizant\\desktop\\backend\\pmsch.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -194,199 +230,277 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShowLogMaintain.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowLogMaintain.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\ShowLogMaintain.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowLogMaintain.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\ShowLogMaintain.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-22T08:49:09.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MachinesController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachinesController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachinesController.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachinesController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\MachinesController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAswGgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:16:23.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MachineRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MachineRepository.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineRepository.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MachineRepository.cs",
-              "RelativeToolTip": "PMSCH.Server\\Repositories\\MachineRepository.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCkAAABzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T05:23:02.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShowAllDetails.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowAllDetails.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\ShowAllDetails.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowAllDetails.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\ShowAllDetails.jsx",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAwG0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-22T08:30:23.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AnalysisPage.css",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\AnalysisPage.css",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\Styles\\AnalysisPage.css",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\AnalysisPage.css",
-              "RelativeToolTip": "pmsch.client\\src\\Styles\\AnalysisPage.css",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-22T08:36:18.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HealthMetrics.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HealthMetrics.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\HealthMetrics.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HealthMetrics.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\HealthMetrics.jsx",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwCwAAABKAAAAAAAAAA==",
+              "Title": "ProtectedRoute.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ProtectedRoute.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\ProtectedRoute.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ProtectedRoute.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\ProtectedRoute.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-21T16:46:42.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AnalysisPage.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AnalysisPage.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\AnalysisPage.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AnalysisPage.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\AnalysisPage.jsx",
-              "ViewState": "AgIAAD4BAAAAAAAAAAAAAOcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-21T16:44:31.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateAcc.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\CreateAcc.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\CreateAcc.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\CreateAcc.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\CreateAcc.jsx",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-22T08:18:19.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateAcc.css",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\CreateAcc.css",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\Styles\\CreateAcc.css",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\CreateAcc.css",
-              "RelativeToolTip": "pmsch.client\\src\\Styles\\CreateAcc.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-22T08:23:33.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ShowAllDetails.css",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\ShowAllDetails.css",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\Styles\\ShowAllDetails.css",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\ShowAllDetails.css",
-              "RelativeToolTip": "pmsch.client\\src\\Styles\\ShowAllDetails.css",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-22T08:29:29.811Z",
+              "WhenOpened": "2025-08-24T03:36:59.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Machine.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Machine.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\Machine.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Machine.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\Machine.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T03:56:16.273Z",
+              "Title": "DeleteMachine.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\DeleteMachine.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\DeleteMachine.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\DeleteMachine.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\DeleteMachine.jsx",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-23T16:20:17.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "PMSCH.Server\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAQwO0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:24:25.899Z",
+              "DocumentIndex": 1,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\App.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\App.jsx",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAkwMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-23T13:50:15.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "AddMachine.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AddMachine.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\AddMachine.jsx",
               "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AddMachine.jsx",
               "RelativeToolTip": "pmsch.client\\src\\AddMachine.jsx",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-22T08:18:14.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
+              "Title": "ShowAllDetails.css",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\ShowAllDetails.css",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\Styles\\ShowAllDetails.css",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\ShowAllDetails.css",
+              "RelativeToolTip": "pmsch.client\\src\\Styles\\ShowAllDetails.css",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-22T08:29:29.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShowAllDetails.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowAllDetails.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\ShowAllDetails.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowAllDetails.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\ShowAllDetails.jsx",
+              "ViewState": "AgIAADAAAAAAAAAAAAAuwDEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-22T08:30:23.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAOIAAAAAAAAAAIAwwPIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:24:25.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeTechnician.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HomeTechnician.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\HomeTechnician.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HomeTechnician.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\HomeTechnician.jsx",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAwOgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-21T17:29:19.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginPage.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\LoginPage.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\LoginPage.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\LoginPage.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\LoginPage.jsx",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAwwBYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-21T17:29:29.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "EditMachine.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\EditMachine.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\EditMachine.jsx",
               "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\EditMachine.jsx",
               "RelativeToolTip": "pmsch.client\\src\\EditMachine.jsx",
-              "ViewState": "AgIAALcAAAAAAAAAAAAuwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHMCAAAAAAAAAAAAAIECAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-21T18:47:41.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnalysisPage.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AnalysisPage.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\AnalysisPage.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AnalysisPage.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\AnalysisPage.jsx",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAwwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-21T16:44:31.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MachinesController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachinesController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachinesController.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachinesController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\MachinesController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:16:23.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TDash.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\TDash.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\TDash.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\TDash.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\TDash.jsx",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwEcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-21T17:59:55.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MaintenanceLogsController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:10:27.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "PMSCH.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\appsettings.json",
+              "RelativeToolTip": "PMSCH.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-14T05:20:25.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "MachineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\MachineRepository.cs",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAgwBoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:23:02.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Machine.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Machine.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\Machine.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Machine.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\Machine.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T03:56:16.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AssignTechnician.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AssignTechnician.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\AssignTechnician.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AssignTechnician.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\AssignTechnician.jsx",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAwFIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-22T10:16:17.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MaintenanceLogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAAAMIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:22:53.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ShowLogMaintain.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowLogMaintain.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\ShowLogMaintain.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ShowLogMaintain.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\ShowLogMaintain.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-22T08:49:09.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "LogMaintenance.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\LogMaintenance.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\LogMaintenance.jsx",
               "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\LogMaintenance.jsx",
               "RelativeToolTip": "pmsch.client\\src\\LogMaintenance.jsx",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAkwKUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-21T17:29:36.218Z",
               "EditorCaption": ""
@@ -394,129 +508,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "MaintenanceLogRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
-              "RelativeToolTip": "PMSCH.Server\\Repositories\\MaintenanceLogRepository.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAKkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T05:22:53.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LoginPage.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\LoginPage.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\LoginPage.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\LoginPage.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\LoginPage.jsx",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAAALcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-21T17:29:29.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ADash.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ADash.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\ADash.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ADash.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\ADash.jsx",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-21T18:04:01.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MDash.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\MDash.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\MDash.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\MDash.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\MDash.jsx",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwCIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-21T18:06:53.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TDash.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\TDash.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\TDash.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\TDash.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\TDash.jsx",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAwFYAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-21T17:59:55.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAADwv0gAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:16:05.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MaintenanceLogsController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\MaintenanceLogsController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T05:10:27.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "TechnicianMachineAssignment.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:14:21.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TechnicianMachineAssignmentController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwvyoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:13:03.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
               "Title": "TechnicianMachineAssignmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
               "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
               "RelativeToolTip": "PMSCH.Server\\Repositories\\TechnicianMachineAssignmentRepository.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAIwH8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAQwEIAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T05:23:05.141Z",
               "EditorCaption": ""
@@ -524,116 +521,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Login.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\Login.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Login.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\Login.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA7wCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:36:17.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\User.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\User.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:39:31.49Z",
+              "Title": "LogMaintenance.css",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\LogMaintenance.css",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\Styles\\LogMaintenance.css",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\LogMaintenance.css",
+              "RelativeToolTip": "pmsch.client\\src\\Styles\\LogMaintenance.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-23T03:52:32.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "MachineTypesController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineTypesController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachineTypesController.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineTypesController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\MachineTypesController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAkwDsAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:16:47.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
               "Title": "AnalysisController.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\AnalysisController.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\AnalysisController.cs",
               "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\AnalysisController.cs",
               "RelativeToolTip": "PMSCH.Server\\Controllers\\AnalysisController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T17:28:57.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MachineCategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T05:22:20.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "HealthMetricsController.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "RelativeToolTip": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:45:45.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "MaintenanceLog.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\MaintenanceLog.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\MaintenanceLog.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\MaintenanceLog.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\MaintenanceLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:05:47.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\LoginRequest.cs",
-              "RelativeToolTip": "PMSCH.Server\\Models\\LoginRequest.cs",
+              "DocumentIndex": 26,
+              "Title": "IAnalysisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\IAnalysisRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\IAnalysisRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\IAnalysisRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\IAnalysisRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T04:08:16.841Z"
+              "WhenOpened": "2025-08-22T09:12:33.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "HealthMetricRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
-              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
-              "RelativeToolTip": "PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAuwLUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T05:22:39.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 25,
               "Title": "HealthMetric.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\HealthMetric.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Models\\HealthMetric.cs",
@@ -645,7 +569,248 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AnalysisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\AnalysisRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\AnalysisRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\AnalysisRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\AnalysisRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:13:29.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AnalysisData.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\AnalysisData.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\AnalysisData.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\AnalysisData.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\AnalysisData.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:12:54.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CreateAcc.css",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\CreateAcc.css",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\Styles\\CreateAcc.css",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\CreateAcc.css",
+              "RelativeToolTip": "pmsch.client\\src\\Styles\\CreateAcc.css",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-22T08:23:33.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TechnicianMachineAssignmentController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\TechnicianMachineAssignmentController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:13:03.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "HealthMetricRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "RelativeToolTip": "PMSCH.Server\\Repositories\\HealthMetricRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAALUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:22:39.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MachineCategory.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\MachineCategory.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\MachineCategory.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\MachineCategory.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\MachineCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:46:44.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AnalysisPage.css",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\AnalysisPage.css",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\Styles\\AnalysisPage.css",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Styles\\AnalysisPage.css",
+              "RelativeToolTip": "pmsch.client\\src\\Styles\\AnalysisPage.css",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-22T08:36:18.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HealthMetrics.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HealthMetrics.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\HealthMetrics.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HealthMetrics.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\HealthMetrics.jsx",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwCwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-21T16:46:42.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CreateAcc.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\CreateAcc.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\CreateAcc.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\CreateAcc.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\CreateAcc.jsx",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-22T08:18:19.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ADash.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ADash.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\ADash.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ADash.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\ADash.jsx",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-21T18:04:01.341Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 35,
+              "Title": "MDash.jsx",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\MDash.jsx",
+              "RelativeDocumentMoniker": "pmsch.client\\src\\MDash.jsx",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\MDash.jsx",
+              "RelativeToolTip": "pmsch.client\\src\\MDash.jsx",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwCIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-21T18:06:53.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAADwv0gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:16:05.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TechnicianMachineAssignment.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\TechnicianMachineAssignment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:14:21.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\Login.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\Login.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA7wCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:36:17.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\User.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:39:31.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MachineTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineTypesController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachineTypesController.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineTypesController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\MachineTypesController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:16:47.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MachineCategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\MachineCategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T05:22:20.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "HealthMetricsController.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "RelativeToolTip": "PMSCH.Server\\Controllers\\HealthMetricsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:45:45.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MaintenanceLog.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\MaintenanceLog.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\MaintenanceLog.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\MaintenanceLog.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\MaintenanceLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:05:47.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "PMSCH.Server\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "PMSCH.Server\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:08:16.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
               "Title": "TechnicianDashboard.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\TechnicianDashboard.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\TechnicianDashboard.jsx",
@@ -657,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 47,
               "Title": "Notification.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Notification.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\Notification.jsx",
@@ -669,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 48,
               "Title": "ManagerDashboard.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\ManagerDashboard.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\ManagerDashboard.jsx",
@@ -681,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 49,
               "Title": "AdminDashboard.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\AdminDashboard.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\AdminDashboard.jsx",
@@ -693,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 52,
               "Title": "MachineTypeRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineTypeRepository.cs",
@@ -705,19 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "HomeTechnician.jsx",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HomeTechnician.jsx",
-              "RelativeDocumentMoniker": "pmsch.client\\src\\HomeTechnician.jsx",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\HomeTechnician.jsx",
-              "RelativeToolTip": "pmsch.client\\src\\HomeTechnician.jsx",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-21T17:29:19.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 50,
               "Title": "Settings.jsx",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\src\\Settings.jsx",
               "RelativeDocumentMoniker": "pmsch.client\\src\\Settings.jsx",
@@ -729,19 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\appsettings.json",
-              "RelativeDocumentMoniker": "PMSCH.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\appsettings.json",
-              "RelativeToolTip": "PMSCH.Server\\appsettings.json",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAkAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-14T05:20:25.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 51,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Program.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Program.cs",
@@ -753,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 53,
               "Title": "MachineCategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
               "RelativeDocumentMoniker": "PMSCH.Server\\Repositories\\MachineCategoryRepository.cs",
@@ -765,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 54,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\2421026\\OneDrive - Cognizant\\Desktop\\Backend\\pmsch.client\\index.html",
               "RelativeDocumentMoniker": "pmsch.client\\index.html",

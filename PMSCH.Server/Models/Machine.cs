@@ -12,7 +12,9 @@
         public int LifeCycle { get; set; }
         public float? Temperature { get; set; }
         public float? EnergyConsumption { get; set; }
-        public string HealthStatus { get; set; }
+        public string? HealthStatus { get; set; }
+
+        public string? AssignedTo { get; set; }
 
 
     }

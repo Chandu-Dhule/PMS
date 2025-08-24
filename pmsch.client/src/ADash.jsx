@@ -74,7 +74,7 @@ function ADash() {
               />
             }
           /> */}
-          <Route path="/add-machine" element={<AddMachine />} />
+          <Route path="add-machine" element={<AddMachine />} />
           <Route path="/home" element={<AnalysisPage />} />
           <Route path="/log-maintenance" element={<LogMaintenance />} />
           <Route path="/health-metrics" element={<HealthMetrics />} />

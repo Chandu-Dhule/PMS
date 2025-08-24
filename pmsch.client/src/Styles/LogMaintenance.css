@@ -7,12 +7,18 @@
     margin: auto;
     margin-top: 20px;
   }
-   
-  .form-container-log input,
-  .form-container-log textarea {
-    display: block;
-    margin: 1rem 0;
-    padding: 0.7rem;
-    width: 95%;
-    font-size: 0.9rem;
-  }
+    .form-container-log select {
+        display: block;
+        margin: 1rem 0;
+        padding: 0.7rem;
+        width: 99.7%;
+        font-size: 0.9rem;
+    }
+    .form-container-log input,
+    .form-container-log textarea {
+        display: block;
+        margin: 1rem 0;
+        padding: 0.7rem;
+        width: 95%;
+        font-size: 0.9rem;
+    }

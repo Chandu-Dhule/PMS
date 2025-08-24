@@ -178,12 +178,12 @@ if (matchedUser.role === 'Admin') {
   // alert(matchedUser.user)
   // alert(matchedUser.Id)
   console.log(matchedUser);
-  nav('/home');
+  nav('/admin/home');
 } else if (matchedUser.role === 'Technician') {
   // alert(matchedUser.role)
-  nav('/home-technician');
+  nav('/technician/home-technician');
 } else if (matchedUser.role === 'Manager') {
-  nav('/home-manager');
+  nav('/manager/home-manager');
 } else {
   
 
