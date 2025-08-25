@@ -1,0 +1,135 @@
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-image: url('/assets/login-bg.jpg'); Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-left {
+  flex: 1;
+  background: rgba(0, 114, 255, 0.85);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.login-left p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.login-right {
+  flex: 1.5;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 2px solid #0072ff;
+}
+
+.login-right h2 {
+  font-size: 32px;
+  color: #0072ff;
+  margin-bottom: 10px;
+}
+
+.login-right p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.login-page-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.login-page-form input[type="text"],
+.login-page-form input[type="password"] {
+  width: 96%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-page-form button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-page-form button[type="submit"]:hover {
+  background-color: #005bb5;
+}
+
+.terms-container {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.terms-link {
+  color: #0072ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.terms-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.terms-content li{
+  text-align: left;
+}
+
+.terms-content h3 {
+  margin-bottom: 15px;
+  color: #0072ff;
+}
+
+.terms-content p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.terms-content button {
+  padding: 10px 20px;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

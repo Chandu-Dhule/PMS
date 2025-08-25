@@ -1,0 +1,36 @@
+.analysis-page {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+    .analysis-page h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #2c3e50;
+        /* text-align: center; */
+    }
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.chart-card {
+    background-color: #fff;
+    /* padding-top: 1rem; */
+/*    padding: 2rem;*/
+/*    padding:3px;*/
+    padding-bottom: 6rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .chart-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #34495e;
+        text-align: center;
+    }
